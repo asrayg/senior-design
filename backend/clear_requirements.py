@@ -6,9 +6,9 @@ Utility to clear all requirements from Neo4j.
 from neo4j import GraphDatabase
 
 # Direct configuration (no imports needed)
-DEFAULT_URI = "neo4j+s://fa69a4aa.databases.neo4j.io"
+DEFAULT_URI = "neo4j+s://____.databases.neo4j.io"
 DEFAULT_USER = "neo4j"
-DEFAULT_PASSWORD = "nHQVCBIQ0fX4ysrTqHJFyfwWhKvsQfwHdxZGS4g7TUM"
+DEFAULT_PASSWORD = "____"
 DEFAULT_DATABASE = "neo4j"
 
 def clear_requirements():
