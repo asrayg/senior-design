@@ -49,9 +49,9 @@ from neo4j import GraphDatabase
 import json
 import os
 
-DEFAULT_URI = os.getenv("NEO4J_URI", "neo4j+s://fa69a4aa.databases.neo4j.io:7687")
+DEFAULT_URI = os.getenv("NEO4J_URI", "neo4j+s://____.databases.neo4j.io:7687")
 DEFAULT_USER = os.getenv("NEO4J_USERNAME", "neo4j")
-DEFAULT_PASSWORD = os.getenv("NEO4J_PASSWORD", "nHQVCBIQ0fX4ysrTqHJFyfwWhKvsQfwHdxZGS4g7TUM")
+DEFAULT_PASSWORD = os.getenv("NEO4J_PASSWORD", "______")
 DEFAULT_DATABASE = os.getenv("NEO4J_DATABASE", "neo4j")
 
 @dataclass
