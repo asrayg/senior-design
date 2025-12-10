@@ -8,3 +8,9 @@ venv/
 .vscode/
 .idea/
 
+# Neo4j data (DO NOT COMMIT)
+backend/data/
+**/neo4j/data/
+**/transactions/
+**/neostore.*
+
