@@ -1,0 +1,85 @@
+{
+  "nodes": {
+    "14": {
+      "name": "Coefficient of\n Restitution",
+      "node_type": "Gain",
+      "incoming": [
+        "15"
+      ],
+      "outgoing": [
+        "16"
+      ]
+    },
+    "17": {
+      "name": "Gravitational\nacceleration",
+      "node_type": "Constant",
+      "incoming": [],
+      "outgoing": [
+        "1"
+      ]
+    },
+    "16": {
+      "name": "Initial\nVelocity ",
+      "node_type": "InitialCondition",
+      "incoming": [
+        "14"
+      ],
+      "outgoing": [
+        "1"
+      ]
+    },
+    "15": {
+      "name": "Memory",
+      "node_type": "Memory",
+      "incoming": [
+        "1",
+        "1"
+      ],
+      "outgoing": [
+        "14"
+      ]
+    },
+    "19": {
+      "name": "More Info",
+      "node_type": "SubSystem",
+      "incoming": [],
+      "outgoing": []
+    },
+    "1": {
+      "name": "Second-Order \nIntegrator",
+      "node_type": "SecondOrderIntegrator",
+      "incoming": [
+        "17",
+        "16"
+      ],
+      "outgoing": [
+        "20",
+        "15",
+        "15",
+        "21"
+      ]
+    },
+    "20": {
+      "name": "Terminator1",
+      "node_type": "Terminator",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": []
+    },
+    "21": {
+      "name": "Terminator2",
+      "node_type": "Terminator",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": []
+    },
+    "22": {
+      "name": "Scope",
+      "node_type": "Scope",
+      "incoming": [],
+      "outgoing": []
+    }
+  }
+}

@@ -1,0 +1,782 @@
+{
+  "nodes": {
+    "TWCAT150": {
+      "name": "Project Categorization",
+      "node_type": "Requirement_General",
+      "text": "Project Categorization",
+      "xmi_id": "_16_6_7ab70804_1256199836185_73062_66906",
+      "incoming": [],
+      "outgoing": [
+        "TWCAT150.1",
+        "TWCAT150.2",
+        "TWCAT150.3",
+        "TWCAT150.4",
+        "TWCAT150.5",
+        "TWCAT150.6"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.1": {
+      "name": "Category Definition",
+      "node_type": "Requirement_General",
+      "text": "Category shall be understood as a concept which enables visual grouping of projects.",
+      "xmi_id": "_16_6_7ab70804_1256200876834_870828_66954",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.2": {
+      "name": "Category Types",
+      "node_type": "Requirement_General",
+      "text": "Category Types",
+      "xmi_id": "_16_6_7ab70804_1256201596158_304162_67031",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [
+        "TWCAT150.2.1",
+        "TWCAT150.2.2"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.2.1": {
+      "name": "System Category",
+      "node_type": "Requirement_System",
+      "text": "There shall be a single predefined system category. All projects which are not assigned to any user-defined categories are assigned to this category. \n\nThe name of the system category shall be \"Uncategorized\".",
+      "xmi_id": "_16_6_7ab70804_1256201535230_195862_66992",
+      "incoming": [
+        "TWCAT150.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.2.2": {
+      "name": "User-defined Categories",
+      "node_type": "Requirement_User",
+      "text": "<html><body><p>Users may define their own categories. Number of user-defined categories is unlimited.</p></body></html>",
+      "xmi_id": "_16_6_7ab70804_1256201641024_503967_67070",
+      "incoming": [
+        "TWCAT150.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3": {
+      "name": "Project Management GUI",
+      "node_type": "Requirement_General",
+      "text": "Project Management GUI",
+      "xmi_id": "_16_6_7ab70804_1256209561551_103733_67147",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [
+        "TWCAT150.3.1",
+        "TWCAT150.3.2",
+        "TWCAT150.3.3",
+        "TWCAT150.3.4",
+        "TWCAT150.3.5"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1": {
+      "name": "Project List Component",
+      "node_type": "Requirement_General",
+      "text": "Project List Component",
+      "xmi_id": "_16_6_7ab70804_1256285990563_280649_78561",
+      "incoming": [
+        "TWCAT150.3"
+      ],
+      "outgoing": [
+        "TWCAT150.3.1.1",
+        "TWCAT150.3.1.2",
+        "TWCAT150.3.1.3",
+        "TWCAT150.3.1.4",
+        "TWCAT150.3.1.5"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.1": {
+      "name": "Shortcut Menu for Categories",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\nWhen projects are displayed in <b>categorized view</b>, there shall be a shortcut menu for category nodes.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nThe shortcut menu shall have the following items:\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\n- <b>Create New Category</b>. This item shall open category creation window. It shall be enabled if the user has the &quot;Create Project/Category&quot; permission.\n    </p>\n\n    <p>\n- <b>Delete Category</b>. This item shall open the category removing window for the selected category. It shall be enabled if the user has the &quot;Remove Project/Category&quot; permission.\n    </p>\n\n    <p>\n- <b>Rename Category</b>. This item shall open the category renaming window for the selected category. It shall be enabled if the user has the &quot;Rename Category&quot; permission.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nRenaming and removing items shall be disabled for the system category.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nAfter renaming, removing or creating a new category the list of projects shall be refreshed.\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256287700730_564430_78902",
+      "incoming": [
+        "TWCAT150.3.1"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.2": {
+      "name": "Shortcut Menu for Projects",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\n<span style=\"white-space:wrap;\">When projects are displayed in <b>categorized view</b>, there shall be a shortcut menu for project nodes. </span>\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nThe shortcut menu shall have the following items:\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\n- <b>Move to Category.</b> <span style=\"white-space:wrap;\">After selecting this menu item, a shortcut menu shall be shown which would list all user-defined categories and the system category. After selecting a specific category, the selected project(s) shall be assigned/reassigned to it. Categories shall be listed in alphabetical order. System category shall be the last shown category. It shall be displayed in italic font. If multiple projects are selected, all of them shall be moved to the chosen category. The <b>&quot;Move to Category&quot;</b> menu item shall be enabled for projects for which the user has the </span><a href=\"mdel://_16_6_304a04a2_1256714931817_270712_79193\">&quot;Edit Project Properties&quot;</a><span style=\"white-space:wrap;\"> permission or for all projects in the user has system-level </span><a href=\"mdel://_16_6_304a04a2_1256714931817_270712_79193\">&quot;Edit Project Properties&quot;</a><span style=\"white-space:wrap;\"> permission.</span>\n    </p>\n\n    <p>\n- <b>&lt;Separator&gt;</b>\n    </p>\n\n    <p>\n- <b>Create New Category.</b> This item shall open <a href=\"mdel://_16_6_7ab70804_1256310755431_464170_92278\">category creation window.</a> It shall only be enabled if the user has the <a href=\"mdel://_16_6_304a04a2_1256713927841_605_79081\">&quot;Create Project/Category&quot;</a> permission.\n    </p>\n\n    <p>\n- <b>Delete Category.</b> This item shall open the <a href=\"mdel://_16_6_7ab70804_1256298653774_931182_79451\">category removing window </a>for the category to which the selected project belongs to. It shall only be enabled if the user has the <a href=\"mdel://_16_6_304a04a2_1256713947701_667177_79118\">&quot;Remove Project/Category&quot;</a> permission.\n    </p>\n\n    <p>\n- <b>Rename Category.</b> This item shall open the <a href=\"mdel://_16_6_7ab70804_1256298806404_416332_79553\">category renaming window</a> for the category to which the selected project belongs to. It shall only be enabled if the user has the <a href=\"mdel://_16_6_304a04a2_1256713970482_873080_79156\">&quot;Rename Category&quot;</a> permission.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nAfter performing all actions in this shortcut menu the list of projects shall be refreshed.\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256287880750_45870_78942",
+      "incoming": [
+        "TWCAT150.3.1"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.1": {
+      "name": "Toolbar Purpose and Placement",
+      "node_type": "Requirement_General",
+      "text": "There should be a special toolbar for changing how projects are listed. This toolbar shall be placed above the project list in the project list component. State of this toolbar shall be remembered between MagicDraw restarts, logins and logouts. ",
+      "xmi_id": "_16_6_304a04a2_1256563241098_514061_36775",
+      "incoming": [
+        "TWCAT150.3.1.3"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3": {
+      "name": "Category Toolbar",
+      "node_type": "Requirement_General",
+      "text": "Category Toolbar",
+      "xmi_id": "_16_6_7ab70804_1256288063951_397494_78979",
+      "incoming": [
+        "TWCAT150.3.1"
+      ],
+      "outgoing": [
+        "TWCAT150.3.1.3.1",
+        "TWCAT150.3.1.3.2"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2": {
+      "name": "Buttons",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      The <span style=\"white-space:wrap;\">toolbar shall have 8 buttons. Button \n      names shall be used as tooltips. Buttons shall be ordered in the order \n      they appear in these requirements.</span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256563278906_442986_36812",
+      "incoming": [
+        "TWCAT150.3.1.3"
+      ],
+      "outgoing": [
+        "TWCAT150.3.1.3.2.1",
+        "TWCAT150.3.1.3.2.2",
+        "TWCAT150.3.1.3.2.3",
+        "TWCAT150.3.1.3.2.4",
+        "TWCAT150.3.1.3.2.5",
+        "TWCAT150.3.1.3.2.6",
+        "TWCAT150.3.1.3.2.7",
+        "TWCAT150.3.1.3.2.8"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.1": {
+      "name": "Categorized View",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      <span style=\"white-space:wrap;\">This button shall be pressed by default. \n      It allows viewing project list using categories.Pressing this button \n      depresses the Alphabetical View button. </span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256563345762_567208_36850",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.2": {
+      "name": "Alphabetical View",
+      "node_type": "Requirement_General",
+      "text": "This button shall be depressed by default. It allows viewing project list as a plain list sorted alphabetically. Pressing this button depresses the Categorized View button. ",
+      "xmi_id": "_16_6_304a04a2_1256563398531_116393_36888",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.3": {
+      "name": "Expand",
+      "node_type": "Requirement_General",
+      "text": "This button shall expand all categories. ",
+      "xmi_id": "_16_6_304a04a2_1256563435203_785750_36927",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.4": {
+      "name": "Collapse",
+      "node_type": "Requirement_General",
+      "text": "This button shall collapse all categories by allowing the user to view an expandable list of categories.\n",
+      "xmi_id": "_16_6_304a04a2_1256563503197_509125_36965",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.5": {
+      "name": "Create New Category",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      <span style=\"white-space:wrap;\">This button shall open the <a href=\"mdel://_16_6_7ab70804_1256310755431_464170_92278\">category \n      creation window</a>. Shall be disabled in the Alphabetical View. &#160;This \n      button shall be enabled only if the user has the </span><a href=\"mdel://_16_6_304a04a2_1256713927841_605_79081\">&quot;Create \n      Project/Category&quot;</a><span style=\"white-space:wrap;\"> permission.</span><span style=\"white-space:wrap;\"> \n      </span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256563536447_658961_37012",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.6": {
+      "name": "Delete Category",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      <span style=\"white-space:wrap;\">This button shall open <a href=\"mdel://_16_6_7ab70804_1256298653774_931182_79451\">category \n      removing window</a>. Shall be disabled in the Alphabetical View. The \n      deletion window shall be opened for the selected category or the \n      category to which the selected project belongs. If there are multiple \n      projects selected, this window shall be opened for the category to which \n      the first selected project belongs. </span><span style=\"white-space:wrap;\">This \n      button shall be enabled only if the user has the </span><a href=\"mdel://_16_6_304a04a2_1256713947701_667177_79118\">&quot;Remove \n      Project/Category&quot;</a><span style=\"white-space:wrap;\"> permission.</span><span style=\"white-space:wrap;\"> \n      </span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256563587264_764552_37060",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.7": {
+      "name": "Rename Category",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      <span style=\"white-space:wrap;\">This button shall open the <a href=\"mdel://_16_6_7ab70804_1256298806404_416332_79553\">category \n      renaming window</a>. Shall be disabled in the Alphabetical View. The \n      renaming window shall be opened for the selected category or the \n      category to which the selected project belongs. If there are multiple \n      projects selected, this window shall be opened for the category to which \n      the first selected project belongs. This button shall only be enabled if \n      the user has the </span><a href=\"mdel://_16_6_304a04a2_1256713970482_873080_79156\">&quot;Rename \n      Category&quot;</a><span style=\"white-space:wrap;\"> permission.</span><span style=\"white-space:wrap;\"> \n      </span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256563632197_313000_37098",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.3.2.8": {
+      "name": "Move to Category",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\n<span style=\"white-space:wrap;\">This button shall be enabled only in the Categorized View, when one or more projects are selected. After pressing this button, a shortcut menu shall be shown which would list all user-defined categories and the system category. After selecting a specific category, the selected project(s) shall be assigned/reassigned to it. Categories shall be listed in alphabetical order. System category shall be the last shown category. It shall be displayed in italic font. This button shall only be enabled <b>for the specific project </b>if the user has the </span><a href=\"mdel://_16_6_304a04a2_1256714931817_270712_79193\">&quot;Edit Project Properties&quot;</a><span style=\"white-space:wrap;\"> permission for that project. This button shall be enabled for <b>all projects </b>if the user has <b>system-level </b></span><a href=\"mdel://_16_6_304a04a2_1256714931817_270712_79193\">&quot;Edit Project Properties&quot;</a><span style=\"white-space:wrap;\"> permission. </span>\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_304a04a2_1256563741991_883844_37176",
+      "incoming": [
+        "TWCAT150.3.1.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.4": {
+      "name": "Project List",
+      "node_type": "Requirement_General",
+      "text": "Project List",
+      "xmi_id": "_16_6_7ab70804_1256293554590_44312_79262",
+      "incoming": [
+        "TWCAT150.3.1"
+      ],
+      "outgoing": [
+        "TWCAT150.3.1.4.1",
+        "TWCAT150.3.1.4.2"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.4.1": {
+      "name": "Plain Project List",
+      "node_type": "Requirement_General",
+      "text": "After pressing the Alphabetical View button in the Category Toolbar, a plain project list shall be displayed without any categories (just like it is done in MD 16.6).",
+      "xmi_id": "_16_6_7ab70804_1256288140776_335886_79053",
+      "incoming": [
+        "TWCAT150.3.1.4"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.4.2": {
+      "name": "Categorized Project List",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\nAfter pressing the <a href=\"mdel://_16_6_304a04a2_1256563345762_567208_36850\">Categorized View</a> button in the <a href=\"mdel://_16_6_7ab70804_1256288063951_397494_78979\">Category Toolbar</a>, a categorized list of projects shall be displayed as a tree table. This table shall have two columns: <b>Name</b> and <b>Branch</b>. These columns shall display the same information that is displayed in plain project list.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nThe tree should have two nesting levels: root elements shall represent categories (by displaying their names) and their children shall represent projects assigned to them (by displaying their names). Categories shall be expanded by default.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\n<a href=\"mdel://_16_6_7ab70804_1256201641024_503967_67070\">User-defined categories</a> shall be listed in alphabetical order. Then the <a href=\"mdel://_16_6_7ab70804_1256201535230_195862_66992\">system category</a> shall be displayed (it should always be the last displayed category). It shall be displayed in italic font. The system category shall be invisible if there are no projects assigned to it.\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\nWhen filtering the list of projects by using the &quot;Show modules&quot; and &quot;Show only assigned&quot; buttons, categories that become empty after filtering shall be hidden.\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256288123046_186680_79016",
+      "incoming": [
+        "TWCAT150.3.1.4"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.1.5": {
+      "name": "Project List Component Usage in MagicDraw",
+      "node_type": "Requirement_General",
+      "text": "Project list component is used in the \"Open Teamwork Project\", \"Edit Projects\", and \"Use Teamwork Module\" windows. The \"Edit Projects\" window uses this component with the Branch column hidden.\n\nThese requirements specify how this component should be extended to be able to show projects using categorized view.",
+      "xmi_id": "_16_6_7ab70804_1256296746721_833661_79379",
+      "incoming": [
+        "TWCAT150.3.1"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2": {
+      "name": "Category Management UI Components",
+      "node_type": "Requirement_General",
+      "text": "Category Management UI Components",
+      "xmi_id": "_16_6_7ab70804_1256286002673_562541_78598",
+      "incoming": [
+        "TWCAT150.3"
+      ],
+      "outgoing": [
+        "TWCAT150.3.2.1",
+        "TWCAT150.3.2.2",
+        "TWCAT150.3.2.3",
+        "TWCAT150.3.2.4"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.1.1": {
+      "name": "Opening the Window",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      <span style=\"white-space:wrap;\">It shall be possible to open the window \n      from: </span>\n    </p>\n\n    <p>\n      \n    </p>\n\n    <p>\n      - <a href=\"mdel://_16_6_7ab70804_1256287700730_564430_78902\">Category \n      shortcut menu</a>\n    </p>\n\n    <p>\n      - <a href=\"mdel://_16_6_7ab70804_1256287880750_45870_78942\">Project \n      shortcut menu</a>\n    </p>\n\n    <p>\n      - <a href=\"mdel://_16_6_7ab70804_1256288063951_397494_78979\">Category \n      Toolbar</a>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256567587199_372015_38019",
+      "incoming": [
+        "TWCAT150.3.2.1"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.1": {
+      "name": "Category Deletion",
+      "node_type": "Requirement_General",
+      "text": "Category Deletion",
+      "xmi_id": "_16_6_7ab70804_1256298653774_931182_79451",
+      "incoming": [
+        "TWCAT150.3.2"
+      ],
+      "outgoing": [
+        "TWCAT150.3.2.1.1",
+        "TWCAT150.3.2.1.2"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.1.2": {
+      "name": "Window Contents and Buttons",
+      "node_type": "Requirement_General",
+      "text": "Category deletion window shall be a question window with the following text:\n\n\"Do you want to delete the category \"<category name>\"?\n\nProjects in this category will not be deleted. You will still be able to find them under the \"Uncategorized\" category.\"\n\nThere shall be two buttons: Yes and No. Yes would delete a category. No would cancel deleting. After deleting a category all projects in it are assigned to the system category.",
+      "xmi_id": "_16_6_304a04a2_1256567714616_852529_38056",
+      "incoming": [
+        "TWCAT150.3.2.1"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.2": {
+      "name": "Category Renaming",
+      "node_type": "Requirement_General",
+      "text": "Category Renaming",
+      "xmi_id": "_16_6_7ab70804_1256298806404_416332_79553",
+      "incoming": [
+        "TWCAT150.3.2"
+      ],
+      "outgoing": [
+        "TWCAT150.3.2.2.1",
+        "TWCAT150.3.2.2.2",
+        "TWCAT150.3.2.2.3"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.2.1": {
+      "name": "Window Contents",
+      "node_type": "Requirement_General",
+      "text": "There shall be an input field for entering a new name for the category. This field shall be filled-in with the current name of the category by default.",
+      "xmi_id": "_16_6_7ab70804_1256308908805_124216_91713",
+      "incoming": [
+        "TWCAT150.3.2.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.2.2": {
+      "name": "Buttons",
+      "node_type": "Requirement_General",
+      "text": "There shall be buttons OK and Cancel. The OK button shall confirm renaming. Empty names are disallowed and name uniqueness shall be checked  (an exception shall be thrown, see the derived requirements from the root requirement \"Category Renaming\"). The Cancel button shall cancel renaming.",
+      "xmi_id": "_16_6_7ab70804_1256308937065_523468_91750",
+      "incoming": [
+        "TWCAT150.3.2.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.2.3": {
+      "name": "Opening the Window",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\nIt shall be possible to open the window from:\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256287700730_564430_78902\">Category shortcut menu</a>\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256287880750_45870_78942\">Project shortcut menu</a>\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256288063951_397494_78979\">Category Toolbar</a>\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256309083556_618670_91788",
+      "incoming": [
+        "TWCAT150.3.2.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.3": {
+      "name": "Category Creation and Selection Combobox",
+      "node_type": "Requirement_General",
+      "text": "There shall be a reusable component for both creating and selecting a category. \n\nIt shall be an editable combobox which shall list all user-defined categories in alphabetical order and the system category as the last category in italic font. \n\nThe system category shall be selected in this combobox by default. \n\nThe user can also enter his/her own name of the category. If a category with such a name already exists, it shall be selected from the combobox. Otherwise a new category shall be created when the users exists the form in which this combobox is used.",
+      "xmi_id": "_16_6_7ab70804_1256306787305_701517_90656",
+      "incoming": [
+        "TWCAT150.3.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.4": {
+      "name": "Category Creation",
+      "node_type": "Requirement_General",
+      "text": "Category Creation",
+      "xmi_id": "_16_6_7ab70804_1256310755431_464170_92278",
+      "incoming": [
+        "TWCAT150.3.2"
+      ],
+      "outgoing": [
+        "TWCAT150.3.2.4.1",
+        "TWCAT150.3.2.4.2",
+        "TWCAT150.3.2.4.3"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.4.1": {
+      "name": "Window Contents",
+      "node_type": "Requirement_General",
+      "text": "There shall be an input field for entering a name for the category. This field shall be empty by default.",
+      "xmi_id": "_16_6_7ab70804_1256310755431_245473_92286",
+      "incoming": [
+        "TWCAT150.3.2.4"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.4.2": {
+      "name": "Buttons",
+      "node_type": "Requirement_General",
+      "text": "There shall be buttons OK and Cancel. The OK button shall add a category. Note that empty names are disallowed and name uniqueness shall be checked ((an exception shall be thrown, see the derived requirements from the root requirement \"Category Creation\").  The Cancel button shall cancel renaming.",
+      "xmi_id": "_16_6_7ab70804_1256310755447_819774_92287",
+      "incoming": [
+        "TWCAT150.3.2.4"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.2.4.3": {
+      "name": "Opening the Window",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\n<span style=\"white-space:wrap;\">It shall be possible to open the window from: </span>\n    </p>\n\n    <p>\n&#160;\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256287700730_564430_78902\">Category shortcut menu</a>\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256287880750_45870_78942\">Project shortcut menu</a>\n    </p>\n\n    <p>\n- <a href=\"mdel://_16_6_7ab70804_1256288063951_397494_78979\">Category Toolbar</a>\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256310755447_353631_92288",
+      "incoming": [
+        "TWCAT150.3.2.4"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.3": {
+      "name": "Creating New Teamwork Projects",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\nThe <span style=\"white-space:wrap;\">&quot;Add Teamwork Project&quot; window shall have the </span><a href=\"mdel://_16_6_7ab70804_1256306787305_701517_90656\">Category Creation and Selection combobox</a><span style=\"white-space:wrap;\">, which shall allow creating and/or selecting in which category the project shall be created.</span>\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256286053903_212298_78636",
+      "incoming": [
+        "TWCAT150.3"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.4": {
+      "name": "Adding Local Projects to Teamwork",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n  <body>\n    <p>\n<span style=\"white-space:wrap;\">The </span><span style=\"white-space:wrap;\">&quot;Add Project to Teamwork Settings&quot; window (devoted for adding local projects to the server) shall have the </span><span style=\"white-space:wrap;\"><a href=\"mdel://_16_6_7ab70804_1256306787305_701517_90656\">Category Creation and Selection combobox</a></span><span style=\"white-space:wrap;\">, which shall allow creating and/or selecting in which category the project together with selected modules shall be created.</span><span style=\"white-space:wrap;\"> </span>\n\n    </p>\n\n</body>\n</html>",
+      "xmi_id": "_16_6_7ab70804_1256286085779_731136_78685",
+      "incoming": [
+        "TWCAT150.3"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.3.5": {
+      "name": "Exporting Module to Teamwork",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      The <span style=\"white-space:wrap;\">&quot;Module Name&quot; window (which is shown \n      when exporting a Teamwork module) shall have the </span><a href=\"mdel://_16_6_7ab70804_1256306787305_701517_90656\">Category \n      Creation and Selection combobox</a><span style=\"white-space:wrap;\">, \n      which shall allow creating and/or selecting in which category the module \n      shall be created.</span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_7ab70804_1256286119031_76249_78722",
+      "incoming": [
+        "TWCAT150.3"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.4": {
+      "name": "Category Properties",
+      "node_type": "Requirement_General",
+      "text": "A single category shall only have a name (string type). Each category may have zero or more projects assigned to it. Each project belongs to one and only one category at any single given time.",
+      "xmi_id": "_16_6_7ab70804_1256214075329_584351_67185",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5": {
+      "name": "Category Management",
+      "node_type": "Requirement_General",
+      "text": "Category Management",
+      "xmi_id": "_16_6_7ab70804_1256216688817_800765_67223",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [
+        "TWCAT150.5.1",
+        "TWCAT150.5.2"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.1": {
+      "name": "System Category Management Restrictions",
+      "node_type": "Requirement_System",
+      "text": "It shall not be possible to remove or rename the system category. It shall only be possible to assign project to this category.",
+      "xmi_id": "_16_6_7ab70804_1256209538202_521861_67109",
+      "incoming": [
+        "TWCAT150.5"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2": {
+      "name": "User-defined Category Management",
+      "node_type": "Requirement_User",
+      "text": "User-defined Category Management",
+      "xmi_id": "_16_6_7ab70804_1256217039069_305909_67277",
+      "incoming": [
+        "TWCAT150.5"
+      ],
+      "outgoing": [
+        "TWCAT150.5.2.1",
+        "TWCAT150.5.2.2",
+        "TWCAT150.5.2.3",
+        "TWCAT150.5.2.4",
+        "TWCAT150.5.2.5",
+        "TWCAT150.5.2.6",
+        "TWCAT150.5.2.7",
+        "TWCAT150.5.2.9",
+        "TWCAT150.5.2.8",
+        "TWCAT150.5.2.10"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.1": {
+      "name": "Category Management Actions",
+      "node_type": "Requirement_General",
+      "text": "Users can create their own categories, rename them, remove them  and assign projects to them if they have a permission to do that (see the derived requirement).",
+      "xmi_id": "_16_6_7ab70804_1256220524417_564487_67615",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.2": {
+      "name": "Avoiding Name Clashes with System Category",
+      "node_type": "Requirement_System",
+      "text": "It shall not be possible to create a user-defined category whose name is \"Uncategorized\". If it is attempted to create such a category, an exception shall be thrown: \"Uncategorized cannot be used to name a category. It is reserved. Please choose a different category name\".",
+      "xmi_id": "_16_6_7ab70804_1256220547978_398254_67652",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.3": {
+      "name": "Ensuring Name Uniqueness",
+      "node_type": "Requirement_General",
+      "text": "Category names are unique per single Teamwork server. If it is attempted to create or rename a category to the name that already exists, an exception shall be thrown: \"A category \"<category name>\" already exists. Please choose a different name.\".",
+      "xmi_id": "_16_6_7ab70804_1256220618497_723629_67690",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.4": {
+      "name": "Automatically Reassigning Projects to System Category",
+      "node_type": "Requirement_System",
+      "text": "When deleting a user-defined category, all projects under it are assigned to the system category automatically.",
+      "xmi_id": "_16_6_7ab70804_1256220692745_88181_67727",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.5": {
+      "name": "Removing Category by Multiple Users at the Same Time",
+      "node_type": "Requirement_User",
+      "text": "If a category is chosen to be removed by several users at the same time, this operation should be performed without any errors for all of them. In other words if the project is already deleted while some user tries to delete it, his/her operation should still be performed as a normal deletion operation without errors reporting that there is no such category anymore.",
+      "xmi_id": "_16_6_7ab70804_1256220938148_498040_67764",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.6": {
+      "name": "Handling Category Removal While Others Are Renaming It",
+      "node_type": "Requirement_General",
+      "text": "If one user is renaming a category and another user deletes it at that time, the renaming operation shall fail with the following exception: \"This category was deleted by another user while you were renaming it.\". ",
+      "xmi_id": "_16_6_7ab70804_1256221328786_724059_67801",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.7": {
+      "name": "Ensuring That Category Name is Entered",
+      "node_type": "Requirement_General",
+      "text": "If the name of the category is empty when adding or renaming it, an exception shall be thrown: \"The category must have a name.\".",
+      "xmi_id": "_16_6_7ab70804_1256221622239_820550_67838",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.9": {
+      "name": "Assigning Project to Category While Others Are Deleting It",
+      "node_type": "Requirement_General",
+      "text": "If a project is being assigned to a category which is deleted at that time, an exception shall be thrown: \"The category into which you were trying to move a project has been deleted by another user.\".",
+      "xmi_id": "_16_6_7ab70804_1256222215045_793428_67924",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.8": {
+      "name": "Category Renaming by Multiple Users",
+      "node_type": "Requirement_User",
+      "text": "If a category is being renamed by several users at the same time, the last renaming shall set the name of the category.",
+      "xmi_id": "_16_6_7ab70804_1256221858975_452055_67887",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.5.2.10": {
+      "name": "Project Assigning to Categories by Multiple Users",
+      "node_type": "Requirement_User",
+      "text": "If a project is being assigned to categories (including the system category) by several users at the same time, the last assignment shall set the category to which the project will belong.",
+      "xmi_id": "_16_6_7ab70804_1256299658755_35657_90495",
+      "incoming": [
+        "TWCAT150.5.2"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.6.1": {
+      "name": "Create Project/Category Permission",
+      "node_type": "Requirement_General",
+      "text": "Current \"Create Project\" permission shall be renamed to \"Create Project/Category\". This permission shall allow both creating projects and categories for users that have this permission. If the user has the \"Create Project/Category\" permission, he/she can assign the created project to any category.",
+      "xmi_id": "_16_6_304a04a2_1256713927841_605_79081",
+      "incoming": [
+        "TWCAT150.6"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.6": {
+      "name": "Category Permissions",
+      "node_type": "Requirement_General",
+      "text": "Category Permissions",
+      "xmi_id": "_16_6_304a04a2_1256713720310_474009_78889",
+      "incoming": [
+        "TWCAT150"
+      ],
+      "outgoing": [
+        "TWCAT150.6.1",
+        "TWCAT150.6.2",
+        "TWCAT150.6.3",
+        "TWCAT150.6.4"
+      ],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.6.2": {
+      "name": "Remove Project/Category Permission",
+      "node_type": "Requirement_General",
+      "text": "Current \"Remove Project\" permission shall be renamed to \"Remove Project/Category\". This permission shall allow both removing projects and categories for users that have this permission.",
+      "xmi_id": "_16_6_304a04a2_1256713947701_667177_79118",
+      "incoming": [
+        "TWCAT150.6"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.6.3": {
+      "name": "Rename Category Permission",
+      "node_type": "Requirement_General",
+      "text": "There shall be a new permission \"Rename Category\". If the user has this permission, he/she can rename categories.",
+      "xmi_id": "_16_6_304a04a2_1256713970482_873080_79156",
+      "incoming": [
+        "TWCAT150.6"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "TWCAT150.6.4": {
+      "name": "Edit Project Properties Permission",
+      "node_type": "Requirement_General",
+      "text": "<html>\n  <head>\n\t\t<style>\n\t\t\tp {padding:0px; margin:0px;}\n\t\t</style>\n\t</head>\n\n  <body>\n    <p>\n      If <span style=\"white-space:wrap;\">the user has the &quot;Edit Project \n      Properties&quot; permission on a specific project, he/she can assign <b>this \n      project </b>to any category. If the user has the system-level &quot;Edit \n      Project Properties&quot; permission, he/she can assign <b>any projects </b>to \n      any categories.</span>\n    </p>\n\n  </body>\n\n</html>\n\n",
+      "xmi_id": "_16_6_304a04a2_1256714931817_270712_79193",
+      "incoming": [
+        "TWCAT150.6"
+      ],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    }
+  }
+}

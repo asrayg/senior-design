@@ -1,0 +1,14 @@
+image: python:3.11
+
+stages:
+  - keepalive
+
+neo4j_keepalive:
+  stage: keepalive
+  script:
+    - pip install neo4j
+    - python pipeline/keepalive.py
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+

@@ -1,0 +1,109 @@
+{
+  "nodes": {
+    "1": {
+      "name": "Coefficient of Restitution",
+      "node_type": "Gain",
+      "incoming": [
+        "10"
+      ],
+      "outgoing": [
+        "6"
+      ]
+    },
+    "2": {
+      "name": "Compare To Zero",
+      "node_type": "Reference",
+      "incoming": [
+        "12"
+      ],
+      "outgoing": [
+        "10",
+        "10",
+        "12"
+      ]
+    },
+    "3": {
+      "name": "Gravitational\nAcceleration",
+      "node_type": "Constant",
+      "incoming": [],
+      "outgoing": [
+        "10"
+      ]
+    },
+    "4": {
+      "name": "Ground",
+      "node_type": "Ground",
+      "incoming": [],
+      "outgoing": [
+        "5"
+      ]
+    },
+    "5": {
+      "name": "Initial Position",
+      "node_type": "InitialCondition",
+      "incoming": [
+        "4"
+      ],
+      "outgoing": [
+        "12"
+      ]
+    },
+    "6": {
+      "name": "Initial Velocity",
+      "node_type": "InitialCondition",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": [
+        "10"
+      ]
+    },
+    "7": {
+      "name": "More Info",
+      "node_type": "SubSystem",
+      "incoming": [],
+      "outgoing": []
+    },
+    "12": {
+      "name": "Position",
+      "node_type": "Integrator",
+      "incoming": [
+        "10",
+        "2",
+        "5"
+      ],
+      "outgoing": [
+        "9",
+        "2"
+      ]
+    },
+    "9": {
+      "name": "Terminator",
+      "node_type": "Terminator",
+      "incoming": [
+        "12"
+      ],
+      "outgoing": []
+    },
+    "10": {
+      "name": "Velocity",
+      "node_type": "Integrator",
+      "incoming": [
+        "6",
+        "3",
+        "2",
+        "2"
+      ],
+      "outgoing": [
+        "12",
+        "1"
+      ]
+    },
+    "11": {
+      "name": "Scope",
+      "node_type": "Scope",
+      "incoming": [],
+      "outgoing": []
+    }
+  }
+}

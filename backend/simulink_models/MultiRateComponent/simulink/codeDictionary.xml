@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" defaultPackage="coderdictionary.data" packageUris="http://schema.mathworks.com/mf0/coderdictionary_data/R2025a http://schema.mathworks.com/mf0/coderdictionary_data/R2025a/coderdictionary.data http://schema.mathworks.com/mf0/systemcomposer_services_proxy/1.2">
+  <Container type="Container" uuid="891a8922-1fc9-448b-9eab-ae139228e20a">
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="09284538-1264-4bc7-ad3a-5e51e82f7938">
+      <Name>SimulinkBuiltin</Name>
+    </ReferencedContainers>
+    <ReferencedContainers type="ReferenceContainerInfo" uuid="d0fa2ae5-57da-4e07-bf79-104b8830913a">
+      <Name>Simulink</Name>
+    </ReferencedContainers>
+    <CDefinitions type="C_Definitions" uuid="2de4a318-0cf9-4127-8382-0724ae92f12c">
+      <FunctionClasses type="FunctionClass" uuid="997ebc8b-b68e-4d9e-8ae7-f73c7029bcc9">
+        <Description>Entry point function owned by model</Description>
+        <Name>ModelFunction</Name>
+      </FunctionClasses>
+      <FunctionClasses type="FunctionClass" uuid="35124b08-d734-43d1-9b41-27e38aaa5a67">
+        <Description>Shared utility function</Description>
+        <FunctionName>$N$C</FunctionName>
+        <Name>UtilityFunction</Name>
+      </FunctionClasses>
+      <SoftwareComponentTemplates type="SoftwareComponentTemplate" uuid="ba9a8804-8e9c-4893-8b0b-06479ab9e2c5">
+        <Name>CODER_DICTIONARY</Name>
+        <Constants type="DataConfiguration" uuid="bffb8db7-0752-4f17-a4bd-6b9477f5bcdc">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>Constants</category>
+        </Constants>
+        <DataTransfers type="DataConfiguration" uuid="a4779c88-9e36-42af-b910-9918c6af5ed7">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>DataTransfers</category>
+        </DataTransfers>
+        <Execution type="FunctionConfiguration" uuid="4ab299be-60ec-4722-a448-f5881a1d4402"/>
+        <GlobalDataStores type="DataConfiguration" uuid="fedbedc3-a6ce-48bc-a008-faba787d684b">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>GlobalDataStores</category>
+        </GlobalDataStores>
+        <GlobalParameters type="DataConfiguration" uuid="1d9d1efb-3f3d-4050-b903-ca611f91c665">
+          <AllowableStorageClasses type="StorageClass" uuid="f9ae2fca-9957-439c-9aea-a6573ec24510"/>
+          <category>GlobalParameters</category>
+        </GlobalParameters>
+        <InitializeTerminate type="FunctionConfiguration" uuid="0781d25e-76ac-443d-a0e4-bc43ff773e77"/>
+        <Inports type="DataConfiguration" uuid="1f3e15fd-05e2-4af7-9ac3-1f755c908442">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>Inports</category>
+        </Inports>
+        <InternalData type="DataConfiguration" uuid="50659f3f-2991-4889-990a-2adcce86fe2b">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>InternalData</category>
+        </InternalData>
+        <LocalParameters type="DataConfiguration" uuid="21e66817-64a3-43a3-b624-4d67cc6f4858">
+          <AllowableStorageClasses type="StorageClass" uuid="f9ae2fca-9957-439c-9aea-a6573ec24510"/>
+          <category>LocalParameters</category>
+        </LocalParameters>
+        <ModelData type="DataConfiguration" uuid="78b57abe-f1f7-4c89-a17e-1662984ab268">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <AllowableStorageClasses type="StorageClass" uuid="f9ae2fca-9957-439c-9aea-a6573ec24510"/>
+          <category>ModelData</category>
+        </ModelData>
+        <Outports type="DataConfiguration" uuid="5f1d5302-2b81-4c17-9a62-d372fcb60590">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>Outports</category>
+        </Outports>
+        <ParameterArguments type="DataConfiguration" uuid="8ab458e2-6a35-42c3-a2e5-850f2fed0868">
+          <AllowableStorageClasses type="StorageClass" uuid="f9ae2fca-9957-439c-9aea-a6573ec24510"/>
+          <category>ParameterArguments</category>
+        </ParameterArguments>
+        <SharedLocalDataStores type="DataConfiguration" uuid="07f4837a-8913-4820-8fd1-3cf47d789ba6">
+          <AllowableStorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746"/>
+          <category>SharedLocalDataStores</category>
+        </SharedLocalDataStores>
+        <SharedUtility type="FunctionConfiguration" uuid="b2abb847-36ad-4551-9726-23b0742370c3"/>
+      </SoftwareComponentTemplates>
+      <StorageClasses type="StorageClass" uuid="a9a2516a-c81c-48a4-a1bd-0a11612b1746">
+        <Description>A multi-instance storage class for signals.This is an example storage class. Please modify this storage class or a copy of it to suit your application needs.</Description>
+        <configuration type="DataConfiguration" uuid="1f3e15fd-05e2-4af7-9ac3-1f755c908442"/>
+        <configuration type="DataConfiguration" uuid="5f1d5302-2b81-4c17-9a62-d372fcb60590"/>
+        <configuration type="DataConfiguration" uuid="50659f3f-2991-4889-990a-2adcce86fe2b"/>
+        <configuration type="DataConfiguration" uuid="07f4837a-8913-4820-8fd1-3cf47d789ba6"/>
+        <configuration type="DataConfiguration" uuid="fedbedc3-a6ce-48bc-a008-faba787d684b"/>
+        <configuration type="DataConfiguration" uuid="a4779c88-9e36-42af-b910-9918c6af5ed7"/>
+        <configuration type="DataConfiguration" uuid="bffb8db7-0752-4f17-a4bd-6b9477f5bcdc"/>
+        <configuration type="DataConfiguration" uuid="78b57abe-f1f7-4c89-a17e-1662984ab268"/>
+        <Name>SignalStruct</Name>
+        <ComponentMultiInstance type="StructuredImplementation" uuid="31c55568-0866-41a5-a4e3-1985e8f0970f">
+          <InstanceNamingRule>$N_Signals$M</InstanceNamingRule>
+          <Placement>InParent</Placement>
+          <TypeNamingRule>$R$N_Signals_T$M</TypeNamingRule>
+          <DataInit>Dynamic</DataInit>
+        </ComponentMultiInstance>
+        <ComponentSingleInstance type="StructuredImplementation" uuid="35068066-6ad0-4afb-b047-c11fcd9cb460">
+          <InstanceNamingRule>$N_Signals$M</InstanceNamingRule>
+          <TypeNamingRule>$R$N_Signals_T$M</TypeNamingRule>
+          <DataInit>Dynamic</DataInit>
+        </ComponentSingleInstance>
+        <SubcomponentMultiInstance type="StructuredImplementation" uuid="0d82e7ea-ad2e-4330-bb8a-83dce76dca46">
+          <InstanceNamingRule>$N_Signals$M</InstanceNamingRule>
+          <Placement>InParent</Placement>
+          <TypeNamingRule>$R$N_Signals_T$M</TypeNamingRule>
+          <DataInit>Dynamic</DataInit>
+        </SubcomponentMultiInstance>
+        <SubcomponentSingleInstance type="StructuredImplementation" uuid="7f2aabcb-8609-4837-ac12-4b462aab57bc">
+          <InstanceNamingRule>$N_Signals$M</InstanceNamingRule>
+          <TypeNamingRule>$R$N_Signals_T$M</TypeNamingRule>
+          <DataInit>Dynamic</DataInit>
+        </SubcomponentSingleInstance>
+      </StorageClasses>
+      <StorageClasses type="StorageClass" uuid="f9ae2fca-9957-439c-9aea-a6573ec24510">
+        <Description>A multi-instance storage class for parameters.This is an example storage class. Please modify this storage class or a copy of it to suit your application needs.</Description>
+        <configuration type="DataConfiguration" uuid="21e66817-64a3-43a3-b624-4d67cc6f4858"/>
+        <configuration type="DataConfiguration" uuid="1d9d1efb-3f3d-4050-b903-ca611f91c665"/>
+        <configuration type="DataConfiguration" uuid="8ab458e2-6a35-42c3-a2e5-850f2fed0868"/>
+        <configuration type="DataConfiguration" uuid="78b57abe-f1f7-4c89-a17e-1662984ab268"/>
+        <Name>ParamStruct</Name>
+        <ComponentMultiInstance type="StructuredImplementation" uuid="bc242a13-54bc-4734-ade8-f566534bc82b">
+          <InstanceNamingRule>$N_Params$M</InstanceNamingRule>
+          <Placement>InParent</Placement>
+          <TypeNamingRule>$R$N_Params_T$M</TypeNamingRule>
+          <DataInit>Static</DataInit>
+        </ComponentMultiInstance>
+        <ComponentSingleInstance type="StructuredImplementation" uuid="2ec99226-c6b4-4e3a-9055-0833d9c5768d">
+          <InstanceNamingRule>$N_Params$M</InstanceNamingRule>
+          <TypeNamingRule>$R$N_Params_T$M</TypeNamingRule>
+          <DataInit>Static</DataInit>
+        </ComponentSingleInstance>
+        <SubcomponentMultiInstance type="StructuredImplementation" uuid="86466003-35fe-43dd-836f-99305161380d">
+          <InstanceNamingRule>$N_Params$M</InstanceNamingRule>
+          <Placement>InParent</Placement>
+          <TypeNamingRule>$R$N_Params_T$M</TypeNamingRule>
+          <DataInit>Static</DataInit>
+        </SubcomponentMultiInstance>
+        <SubcomponentSingleInstance type="StructuredImplementation" uuid="cdd10332-f8b8-4da9-8c82-77c56435d25f">
+          <InstanceNamingRule>$N_Params$M</InstanceNamingRule>
+          <TypeNamingRule>$R$N_Params_T$M</TypeNamingRule>
+          <DataInit>Static</DataInit>
+        </SubcomponentSingleInstance>
+      </StorageClasses>
+      <packageChecksums type="PackageChecksum" uuid="78262e6f-84ef-4034-9adb-5dab11d44ef8">
+        <Checksum>jNftQZTjWEEeLiyQOVQ7QnyI1EN82jPo3cQoGoei0cof+nczjsDcHR6p9irYNs9sh6WFfXAZ4qknGg6NDldEFA==</Checksum>
+        <ChecksumSource>csc_registration.p</ChecksumSource>
+        <PackageName>Simulink</PackageName>
+      </packageChecksums>
+    </CDefinitions>
+  </Container>
+</MF0>

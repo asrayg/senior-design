@@ -1,0 +1,90 @@
+{
+  "1": {
+    "artifact_id": "1",
+    "version_id": "71a832f3c13bf447945eb380764461d0e347c6c8fb6e790c13381d508fbed01a",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222255",
+    "parent_version_id": null
+  },
+  "2": {
+    "artifact_id": "2",
+    "version_id": "fb980dfbe0426d15db66fbbc3e178a75f06384939177fe75f8e098772566b43d",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222269",
+    "parent_version_id": null
+  },
+  "3": {
+    "artifact_id": "3",
+    "version_id": "7e77a94fc9d6e66707a29ed5fe0c0a841b3233f73fe9af2d9956cb20dcdd6bd9",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222281",
+    "parent_version_id": null
+  },
+  "4": {
+    "artifact_id": "4",
+    "version_id": "2ad62f46e940f139bf544cf68fc6c43281f113d712c2149406d825b81d859306",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222293",
+    "parent_version_id": null
+  },
+  "5": {
+    "artifact_id": "5",
+    "version_id": "a44e0c45562baf89b38b07d656d2fe1f08bf74f882807504f169fb52fd9a4517",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222305",
+    "parent_version_id": null
+  },
+  "6": {
+    "artifact_id": "6",
+    "version_id": "47471f66abe99f48e6ae3a527ee56398e88da24997fd893005c4687dcbb85c7c",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222317",
+    "parent_version_id": null
+  },
+  "7": {
+    "artifact_id": "7",
+    "version_id": "006018198b902263c5f21ab454c0a111527320ccb3915bb654dc86dd9bbca25a",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222328",
+    "parent_version_id": null
+  },
+  "12": {
+    "artifact_id": "12",
+    "version_id": "4ec754ce3601d3bb39c81833f2b5ed93b4e9c25f972d7c63e588dee925b2de73",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222340",
+    "parent_version_id": null
+  },
+  "9": {
+    "artifact_id": "9",
+    "version_id": "ceef53ecc175b145bcc12a716e99299bd0781da074f0107cba316dc20b99edcb",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222352",
+    "parent_version_id": null
+  },
+  "10": {
+    "artifact_id": "10",
+    "version_id": "47e19a8a53129ecaf95750c27e6e1a477e25a799114a488e3ff10ebe4bbed5b3",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222364",
+    "parent_version_id": null
+  },
+  "11": {
+    "artifact_id": "11",
+    "version_id": "68431cc38a2019e5a29280d7815769bcc389c218505d0381478cd33604e71487",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.222375",
+    "parent_version_id": null
+  }
+}

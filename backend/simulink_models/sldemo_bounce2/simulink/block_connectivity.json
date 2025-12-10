@@ -1,0 +1,101 @@
+{
+  "nodes": {
+    "14": {
+      "name": "Coefficient of\n Restitution",
+      "node_type": "Gain",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "15"
+      ],
+      "outgoing": [
+        "16"
+      ]
+    },
+    "17": {
+      "name": "Gravitational\nacceleration",
+      "node_type": "Constant",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [],
+      "outgoing": [
+        "1"
+      ]
+    },
+    "16": {
+      "name": "Initial\nVelocity ",
+      "node_type": "InitialCondition",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "14"
+      ],
+      "outgoing": [
+        "1"
+      ]
+    },
+    "15": {
+      "name": "Memory",
+      "node_type": "Memory",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": [
+        "14"
+      ]
+    },
+    "19": {
+      "name": "More Info",
+      "node_type": "SubSystem",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [],
+      "outgoing": []
+    },
+    "1": {
+      "name": "Second-Order \nIntegrator",
+      "node_type": "SecondOrderIntegrator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "17",
+        "16"
+      ],
+      "outgoing": [
+        "20",
+        "15",
+        "21"
+      ]
+    },
+    "20": {
+      "name": "Terminator1",
+      "node_type": "Terminator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": []
+    },
+    "21": {
+      "name": "Terminator2",
+      "node_type": "Terminator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": []
+    },
+    "22": {
+      "name": "Scope",
+      "node_type": "Scope",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce2",
+      "incoming": [],
+      "outgoing": []
+    }
+  }
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[14, 2, 1896, 1096]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">125</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">25</P>
+  <Block BlockType="Gain" Name="Coefficient of&#xA; Restitution" SID="14">
+    <P Name="Position">[235, 219, 295, 261]</P>
+    <P Name="ZOrder">-1</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="Gain">-0.8</P>
+  </Block>
+  <Block BlockType="Constant" Name="Gravitational&#xA;acceleration" SID="17">
+    <P Name="Position">[35, 68, 75, 102]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="Value">-9.81</P>
+    <P Name="OutDataTypeStr">double</P>
+  </Block>
+  <Block BlockType="InitialCondition" Name="Initial&#xA;Velocity " SID="16">
+    <P Name="Position">[155, 108, 195, 152]</P>
+    <P Name="ZOrder">-3</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="Value">0</P>
+  </Block>
+  <Block BlockType="Memory" Name="Memory" SID="15">
+    <P Name="Position">[355, 225, 385, 255]</P>
+    <P Name="ZOrder">-4</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="More Info" SID="19">
+    <PortCounts/>
+    <P Name="Position">[20, 15, 43, 35]</P>
+    <P Name="ZOrder">-5</P>
+    <P Name="DropShadow">on</P>
+    <P Name="ShowName">off</P>
+    <P Name="OpenFcn">showExample(&apos;simulink_general/sldemo_bounceExample&apos;)</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <Mask>
+      <Display RunInitForIconRedraw="off">disp(&apos;?&apos;)</Display>
+    </Mask>
+    <System Ref="system_19"/>
+  </Block>
+  <Block BlockType="SecondOrderIntegrator" Name="Second-Order &#xA;Integrator" SID="1">
+    <PortCounts in="2" out="2"/>
+    <P Name="Position">[235, 61, 375, 154]</P>
+    <P Name="ZOrder">-6</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="ICX">25.0</P>
+    <P Name="LimitX">on</P>
+    <P Name="LowerLimitX">0.0</P>
+    <P Name="StateNameX">&apos;Position&apos;</P>
+    <P Name="ICSourceDXDT">external</P>
+    <P Name="StateNameDXDT">&apos;Velocity&apos;</P>
+    <P Name="ReinitDXDTwhenXreachesSaturation">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">Position</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">Velocity</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator1" SID="20">
+    <P Name="Position">[505, 75, 525, 95]</P>
+    <P Name="ZOrder">-7</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Block>
+  <Block BlockType="Terminator" Name="Terminator2" SID="21">
+    <P Name="Position">[505, 120, 525, 140]</P>
+    <P Name="ZOrder">-8</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="22">
+    <PortCounts/>
+    <P Name="Position">[20, 15, 60, 55]</P>
+    <P Name="ZOrder">-9</P>
+    <P Name="IOType">viewer</P>
+    <List ListType="IOSignalStrings">
+      <P Name="set0ParseKeys">27</P>
+      <P Name="set0Sigs">Second-Order  Integrator:o1</P>
+      <P Name="set1ParseKeys">27</P>
+      <P Name="set1Sigs">Second-Order  Integrator:o2</P>
+    </List>
+    <P Name="OpenAtSimulationStart">on</P>
+    <P Name="GraphicalSettings">{&quot;GraphicalSettings&quot;:{&quot;LegacySettings&quot;:true,&quot;Style&quot;:{&quot;AxesScalingProperties&quot;:{&quot;ScaleAxesLimitsAtStop&quot;:false},&quot;Style&quot;:{&quot;AxesColor&quot;:&quot;[0 0 0]&quot;,&quot;ChannelNames&quot;:[&quot;&quot;,&quot;&quot;],&quot;ColorOrder&quot;:&quot;[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]&quot;,&quot;CurrentConfiguration&quot;:&quot;extmgr.ConfigurationSet&quot;,&quot;DefaultLegendLabel&quot;:[&quot;&quot;,&quot;&quot;],&quot;LabelsColor&quot;:&quot;[0.686274509803922 0.686274509803922 0.686274509803922]&quot;,&quot;LineColor&quot;:[&quot;&quot;,&quot;&quot;],&quot;LineStyle&quot;:[&quot;-&quot;,&quot;-&quot;],&quot;LineWidth&quot;:[1.5,1.5],&quot;Marker&quot;:[&quot;none&quot;,&quot;none&quot;],&quot;MinimizeControls&quot;:&quot;false&quot;,&quot;NumLines&quot;:[1,1],&quot;Placement&quot;:&quot;2&quot;,&quot;PlotType&quot;:&quot;Auto&quot;,&quot;ShowContent&quot;:&quot;true&quot;,&quot;Version&quot;:&quot;2022b&quot;,&quot;Visible&quot;:[true,true],&quot;YGrid&quot;:&quot;true&quot;}}}}</P>
+    <P Name="WindowPosition">[571 350 358 419]</P>
+    <P Name="WasSavedAsWebScope">on</P>
+    <P Name="Floating">off</P>
+    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:10,&quot;MaxYLimReal&quot;:25,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:0,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:true,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},{&quot;MaxYLimMag&quot;:10,&quot;MaxYLimReal&quot;:20,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-30,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:true,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
+    <P Name="NumInputPorts">1</P>
+    <P Name="LayoutDimensionsString">[2 1]</P>
+    <P Name="ShowLegend">on</P>
+    <P Name="ActiveDisplayYMinimum">0</P>
+    <P Name="ActiveDisplayYMaximum">25</P>
+    <P Name="DataLoggingMaxPoints">7500</P>
+    <P Name="DataLoggingDecimateData">on</P>
+    <P Name="DataLoggingDecimation">1</P>
+    <P Name="DataLoggingSaveFormat">Array</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">1</P>
+    <P Name="Src">17#out:1</P>
+    <P Name="Dst">1#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">Position</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="ZOrder">2</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">20#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">Velocity</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">12</P>
+    <P Name="ZOrder">3</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">1#out:2</P>
+    <P Name="Points">[75, 0]</P>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Points">[0, 110]</P>
+      <P Name="Dst">15#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">5</P>
+      <P Name="Dst">21#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">15#out:1</P>
+    <P Name="Dst">14#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">16#out:1</P>
+    <P Name="Dst">1#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Points">[-120, 0; 0, -110]</P>
+    <P Name="Dst">16#in:1</P>
+  </Line>
+  <Annotation SID="24">
+    <P Name="Name">Bouncing Ball Model</P>
+    <P Name="Position">[187, 15, 347, 36]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="ZOrder">-2</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">16</P>
+    <P Name="FontWeight">bold</P>
+  </Annotation>
+  <Annotation SID="25">
+    <P Name="Name">Copyright 2004-2022 The MathWorks, Inc.</P>
+    <P Name="Position">[178, 306, 367, 321]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="HorizontalAlignment">left</P>
+    <P Name="VerticalAlignment">top</P>
+    <P Name="ZOrder">-3</P>
+  </Annotation>
+</System>

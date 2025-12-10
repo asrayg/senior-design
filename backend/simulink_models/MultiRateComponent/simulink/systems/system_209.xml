@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 157, 1024, 902]</P>
+  <P Name="ZoomFactor">185</P>
+  <Block BlockType="Inport" Name="In" SID="288">
+    <P Name="Position">[-210, 83, -180, 97]</P>
+    <P Name="ZOrder">177</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="f1" SID="247">
+    <PortCounts/>
+    <P Name="Position">[-88, 25, -68, 45]</P>
+    <P Name="ZOrder">116</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">Variant</P>
+    <P Name="StatesWhenEnabling">held</P>
+    <P Name="PortDimensions">1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="235">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-85, 80, -65, 100]</P>
+    <P Name="ZOrder">110</P>
+    <P Name="Inputs">|++</P>
+  </Block>
+  <Block BlockType="UnitDelay" Name="Unit Delay" SID="242">
+    <P Name="Position">[-40, 123, -5, 157]</P>
+    <P Name="ZOrder">113</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="StateName">F1State</P>
+    <P Name="HasFrameUpgradeWarning">on</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out" SID="291">
+    <P Name="Position">[55, 83, 85, 97]</P>
+    <P Name="ZOrder">178</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">23</P>
+    <P Name="Src">288#out:1</P>
+    <P Name="Dst">235#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">13</P>
+    <P Name="Src">242#out:1</P>
+    <P Name="Points">[-30, 0]</P>
+    <P Name="Dst">235#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">9</P>
+    <P Name="Src">235#out:1</P>
+    <P Name="Points">[81, 0]</P>
+    <Branch>
+      <P Name="ZOrder">26</P>
+      <P Name="Points">[0, 50]</P>
+      <P Name="Dst">242#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">24</P>
+      <P Name="Dst">291#in:1</P>
+    </Branch>
+  </Line>
+</System>

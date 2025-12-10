@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<cp:coreProperties xmlns:cp="http://schemas.openxmlformats.org/package/2006/metadata/core-properties" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cp:category>model</cp:category>
+  <dcterms:created xsi:type="dcterms:W3CDTF">2009-06-18T19:11:17Z</dcterms:created>
+  <dc:creator>The MathWorks, Inc.</dc:creator>
+  <dc:description>Bouncing Ball Model 
+  
+This model calculates the trajectory, over time, of a ball thrown 
+upward with a velocity of 15 meters per second from a height of 10 m. 
+The model demonstrates the use of the 'ReinitDXDTwhenXreachesSaturation' 
+parameter in the Second-Order Integrator block to model this system. 
+This parameter, when set to 'on', forces a reinitialization of dx/dt 
+(velocity in the model) at the instant when x (position) reaches 
+saturation (i.e., when the ball hits the ground). The reinitialized value 
+is calculated by multiplying a coefficient of restitution times the ball 
+velocity, the instant before the ball hits the ground. The Memory block 
+in the calculation loop serves to capture the velocity of the ball just 
+before it hits the ground. The position of the ball is plotted in the 
+upper axis of the scope while the velocity of the ball is plotted in 
+the lower axis.</dc:description>
+  <cp:lastModifiedBy>The MathWorks, Inc.</cp:lastModifiedBy>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2025-09-12T21:30:21Z</dcterms:modified>
+  <cp:revision>13.0</cp:revision>
+  <cp:version>R2025a</cp:version>
+</cp:coreProperties>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlCache/19700101">
+  <slcache.Information type="slcache.Information" uuid="123db717-a4fc-49bc-9c20-dafc5b4fec90">
+    <coderTargets type="slcache.CoderTarget" uuid="5ab4a732-45b7-4bba-966c-3016988116f0">
+      <STFName>ert</STFName>
+      <folderConfig>ModelSpecific</folderConfig>
+      <genCodeOnly>true</genCodeOnly>
+      <targetMapKey>CODER_TOP_ert</targetMapKey>
+      <targetSuffix>ert</targetSuffix>
+      <checksum>2zRZv5LU+5BIvrB6y6IB/afd8HzSgKQYuj7cyh3iXnLoyjjmlCBvTSH+7Y8nYC7DAsDMK3YXzZ8E7YYbeJW6HQ==</checksum>
+      <compiler>gcc v12</compiler>
+      <mode>CODER_TOP</mode>
+    </coderTargets>
+    <modelName>MultiRateComponent</modelName>
+    <platform>glnxa64</platform>
+    <release>R2025b</release>
+    <slprjVersion>25.2_100</slprjVersion>
+  </slcache.Information>
+</MF0>

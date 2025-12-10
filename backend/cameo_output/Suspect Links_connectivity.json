@@ -1,0 +1,384 @@
+{
+  "nodes": {
+    "R-1": {
+      "name": "Requirement",
+      "node_type": "Requirement_General",
+      "text": "Text",
+      "xmi_id": "_18_0beta_8f90291_1393588306585_689856_10305",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44": {
+      "name": "MagicLibrary",
+      "node_type": "Requirement_General",
+      "text": "Magic Library",
+      "xmi_id": "_17_0_2_3_8f90291_1361968507629_883606_10426",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.1": {
+      "name": "General requirements",
+      "node_type": "Requirement_General",
+      "text": "General requirements",
+      "xmi_id": "_17_0_2_3_8f90291_1361968300843_357813_9182",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.1.1": {
+      "name": "User types BL 3",
+      "node_type": "Requirement_User",
+      "text": "MagicLibrary supports three types of users; librarian, reader, and administrator.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302403_813640_9205",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.1.2": {
+      "name": "Item assignment to categories",
+      "node_type": "Requirement_General",
+      "text": "Each library item is assigned to one or more categories and contains a list of keywords (optional).",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302423_17960_9211",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.1.3": {
+      "name": "Item history maintainance",
+      "node_type": "Requirement_General",
+      "text": "MagicLibrary maintains history of item reservations, loans & returns for every reader.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302443_651905_9217",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.2": {
+      "name": "Problem Statement",
+      "node_type": "Requirement_General",
+      "text": "Problem Statement",
+      "xmi_id": "_17_0_2_3_8f90291_1361968301323_692556_9194",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.2.1": {
+      "name": "Library description",
+      "node_type": "Requirement_General",
+      "text": "A large organization maintains a library, which contains books, audio and video records.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968305243_791773_9375",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.2.2": {
+      "name": "Decision to have software system",
+      "node_type": "Requirement_System",
+      "text": "The organization made a decision to implement software system MagicLibrary dedicated for facilitating\nlibrary usage and management.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968305253_378410_9381",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.3": {
+      "name": "Responsibilities and rights",
+      "node_type": "Requirement_General",
+      "text": "Responsibilities and rights",
+      "xmi_id": "_17_0_2_3_8f90291_1361968301293_327067_9190",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.3.2": {
+      "name": "Librarian responsibilities",
+      "node_type": "Requirement_General",
+      "text": "Librarian is responsible for managing inventory data: items and tree of categories.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304953_616074_9363",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.3.1": {
+      "name": "Administrator responsibilities",
+      "node_type": "Requirement_General",
+      "text": "Administrator is responsible for managing MagicLibrary users and configuring system settings like",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304933_608068_9357",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.3.3": {
+      "name": "Reader rights",
+      "node_type": "Requirement_General",
+      "text": "Reader may review his profile, which contains his reservations, loans, requests, and his personal data.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304963_847567_9369",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4": {
+      "name": "Item reservation",
+      "node_type": "Requirement_General",
+      "text": "Item reservation",
+      "xmi_id": "_17_0_2_3_8f90291_1361968301273_722884_9186",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1": {
+      "name": "Item reservation general",
+      "node_type": "Requirement_General",
+      "text": "Item reservation general",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302783_417964_9223",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.2": {
+      "name": "Found item reservation",
+      "node_type": "Requirement_General",
+      "text": "If reader finds a desirable item, he makes a reservation for it.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303093_63840_9245",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.1": {
+      "name": "Methods to find item",
+      "node_type": "Requirement_General",
+      "text": "Item may be found either by browsing the category tree or searching for items by their property values.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303083_204166_9239",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.3": {
+      "name": "Immediat loaning of available item",
+      "node_type": "Requirement_General",
+      "text": "If the item is immediately available then the reader is informed that he may contact librarian for loaning it according to the made reservation.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303103_995799_9251",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.4": {
+      "name": "Waiting list for not available item",
+      "node_type": "Requirement_General",
+      "text": "If the item is currently loaned out or assigned to another reservation then the reservation is put to the\nordered waiting list.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303113_671370_9257",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.5": {
+      "name": "Search availability for item",
+      "node_type": "Requirement_General",
+      "text": "Both reader and librarian are able to search for library items.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303123_122432_9263",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.2": {
+      "name": "Notification",
+      "node_type": "Requirement_General",
+      "text": "Notification",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302803_527553_9227",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.2.1": {
+      "name": "Notification about available item",
+      "node_type": "Requirement_General",
+      "text": "When the waiting reservation becomes available the system notifies the user.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303643_370474_9275",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.1.6": {
+      "name": "Automatic reservation cancel",
+      "node_type": "Requirement_General",
+      "text": "Available reservations are automatically cancelled if reader doesn’t come to take the item on loan for a\nperiod of time defined in system settings.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303143_514611_9269",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.2.2": {
+      "name": "Notification methods",
+      "node_type": "Requirement_General",
+      "text": "Notifications are sent by SMS.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303663_667120_9281",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.3": {
+      "name": "Loans management",
+      "node_type": "Requirement_General",
+      "text": "Loans management",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302813_560562_9231",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.3.1": {
+      "name": "Loan registration",
+      "node_type": "Requirement_General",
+      "text": "Librarian registers the loan of the item and sets the due return date.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303943_430678_9287",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.3.2": {
+      "name": "Loan Return registration",
+      "node_type": "Requirement_General",
+      "text": "Librarian also registers the return of the loaned item.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303963_861433_9293",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.3.3": {
+      "name": "Penalty reason",
+      "node_type": "Requirement_General",
+      "text": "If a reader has kept the loaned item after the due date, he is given a penalty.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303983_625115_9299",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.3.4": {
+      "name": "Penalty method",
+      "node_type": "Requirement_General",
+      "text": "Currently, the penalty is understood as disabling the right for making new reservations for a period\ndefined by librarian.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968303993_637699_9305",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4": {
+      "name": "Items purchase",
+      "node_type": "Requirement_General",
+      "text": "Items purchase",
+      "xmi_id": "_17_0_2_3_8f90291_1361968302833_62158_9235",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.1": {
+      "name": "Purchasing facilitation",
+      "node_type": "Requirement_General",
+      "text": "Additionally, MagicLibrary facilitates purchasing new library items.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304333_524254_9311",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.2": {
+      "name": "Purchase request for new items",
+      "node_type": "Requirement_General",
+      "text": "If reader doesn’t find a desired item, he can register a request to purchase a new one.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304353_439974_9317",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.3": {
+      "name": "External global repository",
+      "node_type": "Requirement_General",
+      "text": "MagicLibrary uses external system(s) for finding information about the books, audio and video records\nfrom global repositories.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304373_268704_9323",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.4": {
+      "name": "Item request management",
+      "node_type": "Requirement_General",
+      "text": "Item request management",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304393_447854_9329",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.4.1": {
+      "name": "New items requests evaluation",
+      "node_type": "Requirement_General",
+      "text": "Librarian evaluates the registered requests for new items.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304613_212638_9333",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.4.2": {
+      "name": "Requests deny",
+      "node_type": "Requirement_General",
+      "text": "Librarian may deny the request (should provide an explanation).",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304633_589452_9339",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.4.3": {
+      "name": "Requests confirmation",
+      "node_type": "Requirement_General",
+      "text": "Librarian may confirm the request, assign a priority and put it to an ordered list waiting for purchase.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304653_573257_9345",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    },
+    "44.4.4.4.4": {
+      "name": "Requests status tracking",
+      "node_type": "Requirement_General",
+      "text": "MagicLibrary tracks the status of each request.",
+      "xmi_id": "_17_0_2_3_8f90291_1361968304673_969107_9351",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    }
+  }
+}

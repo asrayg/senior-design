@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sltp_editor version="1.1" packageUris="http://schema.mathworks.com/mf0/DiagramEditor/R2019a_20181107 http://schema.mathworks.com/mf0/SltpSyntax/R2025a_202406271400">
+  <diagram.editor.model.Diagram type="diagram.editor.model.Diagram" uuid="5236af4d-0547-40cb-9a2d-1e020e79bcf0">
+    <connections type="diagram.editor.model.Connection" uuid="86ac224c-dc90-4b01-bc28-f3f6b49d0edc">
+      <dstElement type="diagram.editor.model.Entity" uuid="5d012897-1a36-485b-9c4d-0d3a1188c60b"/>
+      <srcElement type="diagram.editor.model.Entity" uuid="0a34aa0f-2522-4edb-9eba-2410807ac7d3"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Edge" uuid="0e460139-c141-410e-9ad5-59e066259797"/>
+      <type>graph.Edge</type>
+    </connections>
+    <entities type="diagram.editor.model.Entity" uuid="0a34aa0f-2522-4edb-9eba-2410807ac7d3">
+      <outConnections type="diagram.editor.model.Connection" uuid="86ac224c-dc90-4b01-bc28-f3f6b49d0edc"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="8a4637c8-d69f-443f-b0e3-321ad289e023"/>
+      <title>Periodic</title>
+      <type>explicit-periodic</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="1c9dd0a6-3c0b-4598-b807-c9e8cd58719c">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="0bce5369-6efc-4f43-bee2-87c18c6baa37"/>
+        <title>Periodic</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <entities type="diagram.editor.model.Entity" uuid="5d012897-1a36-485b-9c4d-0d3a1188c60b">
+      <inConnections type="diagram.editor.model.Connection" uuid="86ac224c-dc90-4b01-bc28-f3f6b49d0edc"/>
+      <position>0,0</position>
+      <size>0,0,0,0</size>
+      <syntaxElement type="sltp.mm.syntax.Node" uuid="10de5726-6d5d-4759-830b-98a12a6c052b"/>
+      <title>Aperiodic</title>
+      <type>async</type>
+      <subDiagram type="diagram.editor.model.Diagram" uuid="ffa6694f-8eb1-492a-8ad3-bac7278f7a08">
+        <position>0,0</position>
+        <syntaxElement type="sltp.mm.syntax.Graph" uuid="01a75419-24dc-475d-90c3-f08c4b82a288"/>
+        <title>Aperiodic</title>
+        <type>graph.Graph</type>
+      </subDiagram>
+    </entities>
+    <syntaxElement type="sltp.mm.syntax.Graph" uuid="1e174173-ec4a-4c74-b845-e26e5f1059c7"/>
+    <title>Default</title>
+    <type>graph.Graph</type>
+  </diagram.editor.model.Diagram>
+  <sltp.mm.syntax.Context type="sltp.mm.syntax.Context" uuid="ae76a801-3003-4983-b10f-a65267730a34">
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4b74570c-337a-4980-acf2-77f6a839e23c">
+      <dataName>port1Accumulator2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="36f11e35-1cfe-479e-b753-e3bbbfd85448">
+      <dataName>port1f1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="187a7141-8676-4dd7-8250-966ec557d10a">
+      <dataName>port1ms_a</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="e615927d-97b3-4d45-a7d4-cea526f826ec">
+      <dataName>port1ms_b</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="96ae04d5-d7a4-4c3a-8f62-a0d53dad76d6">
+      <dataName>port1y1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="2d71c726-7389-4b56-946f-e9a524b51578">
+      <dataName>port2Accumulator3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="c61d1aac-48c4-4d9e-a802-3aa9c47175b3">
+      <dataName>port2f2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="865ec36d-061d-40da-b3a6-ed0f080c0e18">
+      <dataName>port2y2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4f43631b-a335-4c41-93d1-2c2ca975fd55">
+      <dataName>port3U1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3cba67a2-e3a0-429f-9c0b-5f66a869c3da">
+      <dataName>port3u</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="d263d42a-81da-4376-99f1-68da0bd032e1">
+      <dataName>portAperiodic</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="acc98a95-3a16-4326-adff-248a05f402b2">
+      <dataName>portAsync</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9a7fec4d-d0de-4465-a115-def6d82dc31d">
+      <dataName>portEnable</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3db697e7-cace-408d-b780-b8f037ff588c">
+      <dataName>portEnable0</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="7a28f5f1-064b-47ab-ba12-b7e70c4a545a">
+      <dataName>portEnable1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="a57d8a37-7013-4f21-b2b6-b0623664292a">
+      <dataName>portF0</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="67d51e62-1022-40af-aec6-fc9dd9aa3883">
+      <dataName>portF1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="1732b82a-10cc-44ca-92f4-6e3e9e846344">
+      <dataName>portF2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9e517c62-ec09-42a4-8512-2a615ea2375d">
+      <dataName>portIC</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="cd580109-c908-412b-8a42-974f113bdb8e">
+      <dataName>portIn1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="c0b4180c-8326-44cd-b2e1-cad2f0b3c36f">
+      <dataName>portIn2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="558c2897-f48b-4598-aa9f-52af091f51ea">
+      <dataName>portInBus_NVM</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="49a1020a-3a82-4854-bfa0-ee91512e8355">
+      <dataName>portInNVM</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="36c5abe7-72e9-4a62-a162-b75d4244fe49">
+      <dataName>portInport</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="b5afb122-e727-4103-9845-4401f41ad9c6">
+      <dataName>portNVM</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="e9f90dbb-8fc8-432e-9bcc-dce327bb21a5">
+      <dataName>portOut1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="4ab3495a-cff3-4d4d-8e30-44655878cbfb">
+      <dataName>portOut2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="affa660d-cbe0-4f44-8727-9e4938be2750">
+      <dataName>portOut3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="eeae3a79-3a84-4adc-b61b-7be78b081edd">
+      <dataName>portOutBus_NVM</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="20a62af6-16d9-4d9f-aee5-d1bb280c16a3">
+      <dataName>portOutBus_y1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ac93e919-9ac6-4a6f-838c-27f4543b3b41">
+      <dataName>portOutBus_y2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="fa554880-717b-4e70-8019-64a2798d71f6">
+      <dataName>portOutBus_y3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="ca1ff7a6-1cf2-4b35-b6b9-1f6d99892dfb">
+      <dataName>portOutNVM</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="983f8af1-85f1-4b2a-ba42-ceecc5656a88">
+      <dataName>portOutport</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="0b4d5af3-1593-4320-98ad-fc868fbde824">
+      <dataName>portOutport1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="909c69cc-c1b8-49ff-aed5-7494b921f7d7">
+      <dataName>portOutport2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="0ccd95e7-3c7f-4ce7-8174-231e4b87ab23">
+      <dataName>portOutport3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="3556be94-ce19-4ffa-9a87-e53f88ce44bb">
+      <dataName>portPeriodic</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="effab7bd-99c1-4bb9-9067-60dac53d118a">
+      <dataName>portR_NVM</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="40e4d9e3-3406-4797-8595-95cad88011a2">
+      <dataName>portRun</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="da56e1de-2ecd-4907-bfd2-ee97a775ace1">
+      <dataName>portRun1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="d01b6f48-ca5a-4fcc-a589-a72e93867739">
+      <dataName>portRun2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="7e435388-ebcc-4e09-815c-ef649fed891a">
+      <dataName>portS_NVM</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="67edc153-d25b-49da-a658-18e31137f05e">
+      <dataName>portf1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="32751d04-0328-41de-84ce-efad08bcb362">
+      <dataName>portf2</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="bf584e59-fa6c-46ae-8398-0dbda056b398">
+      <dataName>portu</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="062193ea-5b0d-4f94-872c-5c24878efc1f">
+      <dataName>portu0</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="dac0e2c7-1378-48fb-b238-1374fe2f9cb4">
+      <dataName>portu1</dataName>
+      <type>RootInport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="8363d7bd-da81-40b4-b206-ba8ad4732a31">
+      <dataName>porty</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="faabc5fd-3549-49dd-afa2-0572692577ec">
+      <dataName>porty1</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="9987f5ca-2633-4db9-b001-a150eea443ca">
+      <dataName>porty2</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <globalData type="sltp.mm.syntax.GlobalData" uuid="e8609299-8f09-4ce3-89b6-2177ec5e3a5f">
+      <dataName>porty3</dataName>
+      <type>RootOutport</type>
+    </globalData>
+    <rootGraph type="sltp.mm.syntax.Graph" uuid="1e174173-ec4a-4c74-b845-e26e5f1059c7">
+      <children type="sltp.mm.syntax.Node" uuid="10de5726-6d5d-4759-830b-98a12a6c052b">
+        <inEdges type="sltp.mm.syntax.Edge" uuid="0e460139-c141-410e-9ad5-59e066259797"/>
+        <priority>-2147483648</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#14614e</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>A</rate>
+          <title>F0</title>
+        </rates>
+        <title>Aperiodic</title>
+        <type>async</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="5d012897-1a36-485b-9c4d-0d3a1188c60b"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="01a75419-24dc-475d-90c3-f08c4b82a288">
+          <title>Aperiodic</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="ffa6694f-8eb1-492a-8ad3-bac7278f7a08"/>
+        </subgraph>
+      </children>
+      <children type="sltp.mm.syntax.Node" uuid="8a4637c8-d69f-443f-b0e3-321ad289e023">
+        <orderIndex>1</orderIndex>
+        <outEdges type="sltp.mm.syntax.Edge" uuid="0e460139-c141-410e-9ad5-59e066259797"/>
+        <priority>-2147483648</priority>
+        <rates type="sltp.mm.syntax.RateData">
+          <color>#e60000</color>
+          <hasBlocks>true</hasBlocks>
+          <rate>0.001</rate>
+          <title>F1</title>
+        </rates>
+        <title>Periodic</title>
+        <type>explicit-periodic</type>
+        <diagramElement type="diagram.editor.model.Entity" uuid="0a34aa0f-2522-4edb-9eba-2410807ac7d3"/>
+        <subgraph type="sltp.mm.syntax.Graph" uuid="0bce5369-6efc-4f43-bee2-87c18c6baa37">
+          <title>Periodic</title>
+          <diagramElement type="diagram.editor.model.Diagram" uuid="1c9dd0a6-3c0b-4598-b807-c9e8cd58719c"/>
+        </subgraph>
+      </children>
+      <edges type="sltp.mm.syntax.Edge" uuid="0e460139-c141-410e-9ad5-59e066259797">
+        <dst type="sltp.mm.syntax.Node" uuid="10de5726-6d5d-4759-830b-98a12a6c052b"/>
+        <src type="sltp.mm.syntax.Node" uuid="8a4637c8-d69f-443f-b0e3-321ad289e023"/>
+        <type>Delay</type>
+        <diagramElement type="diagram.editor.model.Connection" uuid="86ac224c-dc90-4b01-bc28-f3f6b49d0edc"/>
+      </edges>
+      <title>Default</title>
+      <diagramElement type="diagram.editor.model.Diagram" uuid="5236af4d-0547-40cb-9a2d-1e020e79bcf0"/>
+    </rootGraph>
+  </sltp.mm.syntax.Context>
+</sltp_editor>

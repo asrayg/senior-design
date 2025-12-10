@@ -1,0 +1,24 @@
+{
+    "GraphicalInterface":{
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"ode23",
+        "TestPointedSignals":[
+            {
+                "Decimation":2,
+                "FullBlockPath":"$bdroot\/Second-Order  Integrator",
+                "LogSignal":true,
+                "MaxPoints":5000,
+                "SignalName":"Position"
+            },
+            {
+                "Decimation":2,
+                "FullBlockPath":"$bdroot\/Second-Order  Integrator",
+                "LogSignal":true,
+                "MaxPoints":5000,
+                "PortIndex":2,
+                "SignalName":"Velocity"
+            }
+        ]
+    }
+}

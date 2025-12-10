@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlCache/19700101">
+  <slcache.PartAttributes type="slcache.PartAttributes" uuid="4f946a98-5a8c-44f7-838b-6ec2f51c6a1f">
+    <partMap type="slcache.PartInfo" uuid="8cf759ce-a5c4-44f8-875c-4794370917f4">
+      <origPartName>/R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/tmwinternal/tr</origPartName>
+      <storedPartName>/R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/tmwinternal/tr.packagedMdlMisc</storedPartName>
+    </partMap>
+  </slcache.PartAttributes>
+</MF0>

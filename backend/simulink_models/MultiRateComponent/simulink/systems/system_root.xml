@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 25, 1024, 768]</P>
+  <P Name="Open">on</P>
+  <P Name="SetExecutionDomain">on</P>
+  <P Name="ExecutionDomainType">ExportFunction</P>
+  <P Name="ZoomFactor">87</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">291</P>
+  <Block BlockType="Inport" Name="InNVM" SID="282">
+    <P Name="Position">[-30, 673, 0, 687]</P>
+    <P Name="ZOrder">176</P>
+    <P Name="HideAutomaticName">off</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.InportsMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:4"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:55"/>
+    </Array>
+  </Block>
+  <Block BlockType="Inport" Name="Periodic" SID="248">
+    <P Name="Position">[135, 748, 165, 762]</P>
+    <P Name="ZOrder">68</P>
+    <P Name="HideAutomaticName">off</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.BlockFcnMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:12"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:67"/>
+    </Array>
+    <P Name="Port">2</P>
+    <P Name="OutputFunctionCall">on</P>
+    <P Name="SampleTime">0.001</P>
+  </Block>
+  <Block BlockType="Inport" Name="In" SID="289">
+    <P Name="Position">[20, 833, 50, 847]</P>
+    <P Name="ZOrder">182</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.InportsMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:6"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:58"/>
+    </Array>
+    <P Name="Port">3</P>
+  </Block>
+  <Block BlockType="Inport" Name="Aperiodic" SID="269">
+    <P Name="Position">[135, 963, 165, 977]</P>
+    <P Name="ZOrder">77</P>
+    <P Name="ForegroundColor">teal</P>
+    <P Name="HideAutomaticName">off</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.BlockFcnMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:18"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:73"/>
+    </Array>
+    <P Name="Port">4</P>
+    <P Name="OutputFunctionCall">on</P>
+  </Block>
+  <Block BlockType="SubSystem" Name="F1" SID="209">
+    <PortCounts in="1" out="1" trigger="1"/>
+    <P Name="Position">[185, 796, 390, 884]</P>
+    <P Name="ZOrder">64</P>
+    <P Name="ForegroundColor">red</P>
+    <P Name="BackgroundColor">automatic</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RTWFcnName">foo</P>
+    <System Ref="system_209"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="F2" SID="270">
+    <PortCounts in="1" out="1" trigger="1"/>
+    <P Name="Position">[185, 1007, 390, 1093]</P>
+    <P Name="ZOrder">75</P>
+    <P Name="ForegroundColor">teal</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="ShowPortLabels">FromPortBlockName</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RTWFcnName">foo</P>
+    <System Ref="system_270"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Init" SID="7">
+    <PortCounts in="1"/>
+    <P Name="Position">[110, 639, 295, 721]</P>
+    <P Name="ZOrder">-7</P>
+    <P Name="ForegroundColor">lightBlue</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RTWFcnName">foo</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_7"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="Term" SID="249">
+    <PortCounts out="1"/>
+    <P Name="Position">[325, 637, 500, 723]</P>
+    <P Name="ZOrder">69</P>
+    <P Name="ForegroundColor">blueViolet</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="RTWFcnName">foo</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <System Ref="system_249"/>
+  </Block>
+  <Block BlockType="Outport" Name="OutNVM" SID="286">
+    <P Name="Position">[555, 673, 585, 687]</P>
+    <P Name="ZOrder">181</P>
+    <P Name="HideAutomaticName">off</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.OutportsMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:8"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:61"/>
+    </Array>
+  </Block>
+  <Block BlockType="Outport" Name="Out" SID="285">
+    <P Name="Position">[465, 1043, 495, 1057]</P>
+    <P Name="ZOrder">180</P>
+    <P Name="HideAutomaticName">off</P>
+    <Array PropName="Mappings" Type="Simulink.CoderDictionary.OutportsMapping" Dimension="1*2">
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:10"/>
+      <Object Reference="true" ObjectID="/simulink/blockdiagram.xml:64"/>
+    </Array>
+    <P Name="Port">2</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">111</P>
+    <P Name="Src">248#out:1</P>
+    <P Name="Points">[115, 0]</P>
+    <P Name="Dst">209#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">130</P>
+    <P Name="Src">282#out:1</P>
+    <P Name="Dst">7#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">134</P>
+    <P Name="Src">249#out:1</P>
+    <P Name="Dst">286#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">133</P>
+    <P Name="Src">270#out:1</P>
+    <P Name="Dst">285#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">117</P>
+    <P Name="Src">269#out:1</P>
+    <P Name="Points">[115, 0]</P>
+    <P Name="Dst">270#trigger</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">138</P>
+    <P Name="Src">289#out:1</P>
+    <P Name="Dst">209#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">139</P>
+    <P Name="Src">209#out:1</P>
+    <P Name="Points">[19, 0; 0, 89; -335, 0; 0, 121]</P>
+    <P Name="Dst">270#in:1</P>
+  </Line>
+</System>

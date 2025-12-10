@@ -1,0 +1,1 @@
+var modelInfo = {model:"MultiRateComponent"};var modelHierarchy=[{model:"MultiRateComponent",relativePath:"_internal.html",parent:"null"},];var AddCode = true;var ProtectedModel = false;

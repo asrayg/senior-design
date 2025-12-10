@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[369, 77, 1788, 826]</P>
+  <P Name="ZoomFactor">411</P>
+  <Block BlockType="EventListener" Name="Event Listener" SID="251">
+    <P Name="Position">[-95, 40, -75, 60]</P>
+    <P Name="ZOrder">145</P>
+    <P Name="DisableCoverage">on</P>
+    <P Name="EventType">Terminate</P>
+    <P Name="EventName">reset</P>
+  </Block>
+  <Block BlockType="StateReader" Name="State Reader" SID="257">
+    <P Name="Position">[-35, 80, -15, 100]</P>
+    <P Name="ZOrder">147</P>
+    <P Name="StateOwnerBlock">../../F1/Unit Delay</P>
+    <P Name="StateName">F1State</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out1" SID="258">
+    <P Name="Position">[40, 83, 70, 97]</P>
+    <P Name="ZOrder">148</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">257#out:1</P>
+    <P Name="Dst">258#in:1</P>
+  </Line>
+</System>

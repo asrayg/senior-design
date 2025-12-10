@@ -1,0 +1,52 @@
+---
+config:
+  layout: elk
+---
+flowchart TD
+ subgraph MBSE_Tools["Model-Based Development Tools"]
+        CAMEO["Cameo - Overarching Project (SysML/UML)"]
+        SIMULINK["Simulink - Software Requirements/Design Models"]
+        GIT["Git/GitLab - Source Code"]
+        TESTS["Python Tests"]
+  end
+ subgraph Ingestion["Ingestion & Cleanup Pipeline"]
+        CLEAN["Ingestion + Data Cleaning<br>(Normalize, Assign IDs, Map Links)"]
+  end
+ subgraph DB["Directional Graph - Neo4J"]
+        CURR["Current State Tree<br>(Latest Traceability Graph)"]
+        HIST["History / Baselines<br>(Snapshots &amp; Versions)"]
+  end
+ subgraph Backend["Backend Services"]
+        API["REST API - Python Flask Backend"]
+        DB
+        VC["Version Control<br>Audit + Snapshots"]
+  end
+ subgraph Frontend["Frontend (Next.js UI)"]
+        GRAPHUI["Graph Visualization<br>(Interactive Tree/Graph Viewer)"]
+        IMPACTUI["Impact Analysis Engine<br>(Click-Based Traversal)"]
+        LINKUI["Manual Linking Tool<br>(User Creates Cameo↔Simulink Links)"]
+        BASEUI["Baseline & History Viewer"]
+  end
+ subgraph Features["Core Capabilities"]
+        TRACE["Cross-Tool Traceability<br>(Graph Queries from DB)"]
+        BASE["Baselines & Snapshots"]
+        IMPACT["Impact Analysis<br>(Tree Traversal in UI)"]
+  end
+    CAMEO -. "User-defined Links" .-> SIMULINK
+    CAMEO -- Requirements Artifacts --> CLEAN
+    SIMULINK -- Detailed SW Models --> CLEAN
+    GIT -- Source Code + Commits --> CLEAN
+    TESTS -- Validation Results --> CLEAN
+    CLEAN --> CURR & HIST
+    SIMULINK -- "Auto-generated C Code" --> GIT
+    GIT -- Code Under Test --> TESTS
+    CURR --> TRACE & VC
+    HIST --> BASE & VC
+    API -. POST /ingest .-> CLEAN
+    API -. GET /traceability .-> TRACE
+    API -. POST /baseline .-> BASE
+    API -. GET /baseline/:id .-> HIST
+    TRACE --> GRAPHUI
+    BASE --> BASEUI
+    IMPACT --> IMPACTUI
+    UI_FLOW["User Interactions"] --> LINKUI

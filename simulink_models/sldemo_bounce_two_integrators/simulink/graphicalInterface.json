@@ -1,0 +1,31 @@
+{
+    "GraphicalInterface":{
+        "ExternalFileReferences":[
+            {
+                "Path":"$bdroot\/Compare To Zero",
+                "Reference":"simulink\/Logic and Bit\nOperations\/Compare\nTo Zero",
+                "SID":"2",
+                "Type":"LIBRARY_BLOCK"
+            }
+        ],
+        "PreCompExecutionDomainType":"Unset",
+        "SimulinkSubDomainType":"Simulink",
+        "SolverName":"ode23",
+        "TestPointedSignals":[
+            {
+                "Decimation":2,
+                "FullBlockPath":"$bdroot\/Position",
+                "LogSignal":true,
+                "MaxPoints":5000,
+                "SignalName":"Position"
+            },
+            {
+                "Decimation":2,
+                "FullBlockPath":"$bdroot\/Velocity",
+                "LogSignal":true,
+                "MaxPoints":5000,
+                "SignalName":"Velocity"
+            }
+        ]
+    }
+}

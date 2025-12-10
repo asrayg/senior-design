@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModelInformation Version="1.0">
+  <Model>
+    <P Name="ModelUUID">f4e42551-0613-4bab-aa86-d4a7b1d49ab6</P>
+    <P Name="SLXCompressionType">Normal</P>
+    <P Name="LastSavedArchitecture">glnxa64</P>
+    <ConfigManagerSettings>
+      <P Name="ModifiedByFormat">The MathWorks Inc.</P>
+      <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:11.0&gt;</P>
+    </ConfigManagerSettings>
+    <EditorSettings>
+      <P Name="SampleTimeColors">on</P>
+      <P Name="LibraryLinkDisplay">none</P>
+      <P Name="FunctionConnectors">on</P>
+      <P Name="MultithreadedSim">on</P>
+    </EditorSettings>
+    <SimulationSettings>
+      <P Name="SimulationMode">normal</P>
+      <Object PropName="DataLoggingOverride" ObjectID="1" ClassName="Simulink.SimulationData.ModelLoggingInfo">
+        <P Name="model_" Class="char">$bdroot</P>
+        <Array PropName="logAsSpecifiedByModels_" Type="Cell" Dimension="1*1">
+          <Cell Class="char">$bdroot</Cell>
+        </Array>
+        <Array PropName="logAsSpecifiedByModelsSSIDs_" Type="Cell" Dimension="1*1">
+          <Cell Class="char"/>
+        </Array>
+      </Object>
+    </SimulationSettings>
+    <ExternalMode>
+      <P Name="ExtModeAutoUpdateStatusClock">off</P>
+    </ExternalMode>
+    <EngineSettings>
+      <P Name="ConfigurableSubsystemUsage">warning</P>
+    </EngineSettings>
+    <ConcurrentExecutionSettings>
+      <Object PropName="DataTransfer" ObjectID="2" ClassName="Simulink.GlobalDataTransfer">
+        <P Name="DefaultTransitionBetweenSyncTasks" Class="char">Ensure deterministic transfer (maximum delay)</P>
+        <P Name="DefaultTransitionBetweenAsyncTasks" Class="char">Ensure data integrity only</P>
+        <P Name="DefaultTransitionBetweenContTasks" Class="char">Ensure deterministic transfer (minimum delay)</P>
+        <P Name="DefaultExtrapolationMethodBetweenContTasks" Class="char">None</P>
+      </Object>
+      <Array PropName="ModelMappings" Type="Simulink.CoderDictionary.ModelMapping" Dimension="1*2">
+        <Object ObjectID="3">
+          <P Name="DummyName" Class="char"/>
+          <Array PropName="Inports" Type="Simulink.CoderDictionary.InportsMapping" Dimension="1*2">
+            <Object ObjectID="4">
+              <Object PropName="MappedTo" ObjectID="5" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+            <Object ObjectID="6">
+              <Object PropName="MappedTo" ObjectID="7" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+          </Array>
+          <Array PropName="Outports" Type="Simulink.CoderDictionary.OutportsMapping" Dimension="1*2">
+            <Object ObjectID="8">
+              <Object PropName="MappedTo" ObjectID="9" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+            <Object ObjectID="10">
+              <Object PropName="MappedTo" ObjectID="11" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+          </Array>
+          <Array PropName="FcnCallInports" Type="Simulink.CoderDictionary.BlockFcnMapping" Dimension="1*2">
+            <Object ObjectID="12">
+              <P Name="Prototype" Class="char"/>
+              <Object PropName="FunctionReference" ObjectID="13" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="14" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="15" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="16" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="17" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+            <Object ObjectID="18">
+              <P Name="Prototype" Class="char"/>
+              <Object PropName="FunctionReference" ObjectID="19" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="20" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="21" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="22" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="23" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            </Object>
+          </Array>
+          <Array PropName="OneShotFunctionMappings" Type="Simulink.CoderDictionary.EntryPointMapping" Dimension="1*2">
+            <Object ObjectID="24">
+              <P Name="Prototype" Class="char">$R$N</P>
+              <P Name="SimulinkFunctionName" Class="char">Initialize</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+              <Object PropName="FunctionReference" ObjectID="25" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="26" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="27" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="28" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="29" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+            </Object>
+            <Object ObjectID="30">
+              <P Name="Prototype" Class="char"/>
+              <P Name="SimulinkFunctionName" Class="char">Terminate</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+              <Object PropName="FunctionReference" ObjectID="31" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="32" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="33" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="34" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="35" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+            </Object>
+          </Array>
+          <P Name="OutputFunctionMappings" Class="double">[]</P>
+          <P Name="UpdateFunctionMappings" Class="double">[]</P>
+          <P Name="AperiodicFunctionMappings" Class="double">[]</P>
+          <P Name="AsynchronousFunctionMappings" Class="double">[]</P>
+          <P Name="ResetFunctions" Class="double">[]</P>
+          <P Name="SimulinkFunctionCallerMappings" Class="double">[]</P>
+          <P Name="ModelScopedParameters" Class="double">[]</P>
+          <P Name="Parameters" Class="double">[]</P>
+          <P Name="Signals" Class="double">[]</P>
+          <P Name="SynthesizedLocalDataStores" Class="double">[]</P>
+          <P Name="RateTransitions" Class="double">[]</P>
+          <Object PropName="SignalDataTransfers" ObjectID="36" ClassName="Simulink.CoderDictionary.SignalDataTransfersMapping">
+            <P Name="UUID" Class="char"/>
+            <P Name="OutputPort" Class="int32">0</P>
+            <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            <P Name="BlockSID" Class="char">209</P>
+            <P Name="PortNum" Class="int32">0</P>
+            <P Name="PortType" Class="int32">2</P>
+            <P Name="SignalName" Class="char">DataTransferAtF1Outport1</P>
+          </Object>
+          <P Name="DataStores" Class="double">[]</P>
+          <Array PropName="States" Type="Simulink.CoderDictionary.StateMapping" Dimension="1*2">
+            <Object ObjectID="37">
+              <P Name="StateIdentifier" Class="int32">0</P>
+              <P Name="Identifier" Class="int32">0</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+              <Object PropName="MappedTo" ObjectID="38" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="BlockSID" Class="char">242</P>
+              <P Name="StereotypeProperties" Class="char"/>
+            </Object>
+            <Object ObjectID="39">
+              <P Name="StateIdentifier" Class="int32">0</P>
+              <P Name="Identifier" Class="int32">0</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+              <Object PropName="MappedTo" ObjectID="40" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">StorageClass</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <P Name="ServicePort" Class="double">[]</P>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="BlockSID" Class="char">274</P>
+              <P Name="StereotypeProperties" Class="char"/>
+            </Object>
+          </Array>
+          <Object PropName="DefaultsMapping" ObjectID="41" ClassName="Simulink.CoderDictionary.DefaultsMapping">
+            <Object Reference="true" PropName="ParentMapping" ObjectID="3"/>
+            <Object PropName="Inports" ObjectID="42" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="Outports" ObjectID="43" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="GlobalParameters" ObjectID="44" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="SharedParameters" ObjectID="45" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="PerInstanceParameters" ObjectID="46" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="SharedLocalDataStores" ObjectID="47" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="GlobalDataStores" ObjectID="48" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="InternalData" ObjectID="49" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="Constants" ObjectID="50" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <P Name="StorageClass" Class="double">[]</P>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <P Name="MemorySection" Class="double">[]</P>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="InitTermFunctions" ObjectID="51" ClassName="Simulink.FunctionReferenceClass">
+              <P Name="FunctionClass" Class="double">[]</P>
+              <P Name="MemorySection" Class="double">[]</P>
+            </Object>
+            <Object PropName="ExecutionFunctions" ObjectID="52" ClassName="Simulink.FunctionReferenceClass">
+              <P Name="FunctionClass" Class="double">[]</P>
+              <P Name="MemorySection" Class="double">[]</P>
+            </Object>
+            <Object PropName="SharedUtilityFunctions" ObjectID="53" ClassName="Simulink.FunctionReferenceClass">
+              <P Name="FunctionClass" Class="double">[]</P>
+              <P Name="MemorySection" Class="double">[]</P>
+            </Object>
+          </Object>
+          <P Name="isFunctionPlatform" Class="logical">0</P>
+          <P Name="DeploymentType" Class="char">Unset</P>
+          <P Name="Name" Class="char">rtwdemo_functions_c</P>
+          <P Name="Active" Class="logical">0</P>
+        </Object>
+        <Object ObjectID="54">
+          <P Name="DummyName" Class="char"/>
+          <Array PropName="Inports" Type="Simulink.CoderDictionary.InportsMapping" Dimension="1*2">
+            <Object ObjectID="55">
+              <Object PropName="MappedTo" ObjectID="56" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="57" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+            <Object ObjectID="58">
+              <Object PropName="MappedTo" ObjectID="59" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="60" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+          </Array>
+          <Array PropName="Outports" Type="Simulink.CoderDictionary.OutportsMapping" Dimension="1*2">
+            <Object ObjectID="61">
+              <Object PropName="MappedTo" ObjectID="62" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="63" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+            <Object ObjectID="64">
+              <Object PropName="MappedTo" ObjectID="65" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="66" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="StereotypeProperties" Class="char"/>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+          </Array>
+          <Array PropName="FcnCallInports" Type="Simulink.CoderDictionary.BlockFcnMapping" Dimension="1*2">
+            <Object ObjectID="67">
+              <P Name="Prototype" Class="char"/>
+              <Object PropName="FunctionReference" ObjectID="68" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="69" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="70" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="71" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="72" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+            <Object ObjectID="73">
+              <P Name="Prototype" Class="char"/>
+              <Object PropName="FunctionReference" ObjectID="74" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="75" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="76" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="77" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="78" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            </Object>
+          </Array>
+          <Array PropName="OneShotFunctionMappings" Type="Simulink.CoderDictionary.EntryPointMapping" Dimension="1*2">
+            <Object ObjectID="79">
+              <P Name="Prototype" Class="char"/>
+              <P Name="SimulinkFunctionName" Class="char">Initialize</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+              <Object PropName="FunctionReference" ObjectID="80" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="81" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="82" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="83" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="84" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+            </Object>
+            <Object ObjectID="85">
+              <P Name="Prototype" Class="char"/>
+              <P Name="SimulinkFunctionName" Class="char">Terminate</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+              <Object PropName="FunctionReference" ObjectID="86" ClassName="Simulink.FunctionReferenceClass">
+                <Object PropName="FunctionClass" ObjectID="87" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <Object PropName="MemorySection" ObjectID="88" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+              <Object PropName="Deployment" ObjectID="89" ClassName="Simulink.FunctionDeployment">
+                <P Name="ExecutionCore" Class="char">Auto</P>
+                <Object PropName="TimerService" ObjectID="90" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+              </Object>
+            </Object>
+          </Array>
+          <P Name="OutputFunctionMappings" Class="double">[]</P>
+          <P Name="UpdateFunctionMappings" Class="double">[]</P>
+          <P Name="AperiodicFunctionMappings" Class="double">[]</P>
+          <P Name="AsynchronousFunctionMappings" Class="double">[]</P>
+          <P Name="ResetFunctions" Class="double">[]</P>
+          <P Name="SimulinkFunctionCallerMappings" Class="double">[]</P>
+          <P Name="ModelScopedParameters" Class="double">[]</P>
+          <P Name="Parameters" Class="double">[]</P>
+          <P Name="Signals" Class="double">[]</P>
+          <P Name="SynthesizedLocalDataStores" Class="double">[]</P>
+          <P Name="RateTransitions" Class="double">[]</P>
+          <P Name="SignalDataTransfers" Class="double">[]</P>
+          <P Name="DataStores" Class="double">[]</P>
+          <Array PropName="States" Type="Simulink.CoderDictionary.StateMapping" Dimension="1*2">
+            <Object ObjectID="91">
+              <P Name="StateIdentifier" Class="int32">0</P>
+              <P Name="Identifier" Class="int32">0</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+              <Object PropName="MappedTo" ObjectID="92" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="93" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="BlockSID" Class="char">242</P>
+              <P Name="StereotypeProperties" Class="char"/>
+            </Object>
+            <Object ObjectID="94">
+              <P Name="StateIdentifier" Class="int32">0</P>
+              <P Name="Identifier" Class="int32">0</P>
+              <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+              <Object PropName="MappedTo" ObjectID="95" ClassName="Simulink.DataReferenceClass">
+                <P Name="MappedTo" Class="char">ServicePort</P>
+                <P Name="StorageClass" Class="double">[]</P>
+                <Object PropName="ServicePort" ObjectID="96" ClassName="Simulink.MapDataRef">
+                  <P Name="UUID" Class="char"/>
+                </Object>
+                <P Name="CSCAttributes" Class="char"/>
+                <P Name="MemorySection" Class="double">[]</P>
+                <P Name="Identifier" Class="char"/>
+              </Object>
+              <P Name="BlockSID" Class="char">274</P>
+              <P Name="StereotypeProperties" Class="char"/>
+            </Object>
+          </Array>
+          <Object PropName="DefaultsMapping" ObjectID="97" ClassName="Simulink.CoderDictionary.DefaultsMapping">
+            <Object Reference="true" PropName="ParentMapping" ObjectID="54"/>
+            <Object PropName="Inports" ObjectID="98" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="99" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="100" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="Outports" ObjectID="101" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="102" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="103" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="GlobalParameters" ObjectID="104" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="105" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="106" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="SharedParameters" ObjectID="107" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="108" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="109" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="PerInstanceParameters" ObjectID="110" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="111" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="112" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="SharedLocalDataStores" ObjectID="113" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="114" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="115" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="GlobalDataStores" ObjectID="116" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="117" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="118" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="InternalData" ObjectID="119" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="120" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="121" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="Constants" ObjectID="122" ClassName="Simulink.DataReferenceClass">
+              <P Name="MappedTo" Class="char">StorageClass</P>
+              <Object PropName="StorageClass" ObjectID="123" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="ServicePort" Class="double">[]</P>
+              <P Name="CSCAttributes" Class="char"/>
+              <Object PropName="MemorySection" ObjectID="124" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <P Name="Identifier" Class="char"/>
+            </Object>
+            <Object PropName="InitTermFunctions" ObjectID="125" ClassName="Simulink.FunctionReferenceClass">
+              <Object PropName="FunctionClass" ObjectID="126" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <Object PropName="MemorySection" ObjectID="127" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+            </Object>
+            <Object PropName="ExecutionFunctions" ObjectID="128" ClassName="Simulink.FunctionReferenceClass">
+              <Object PropName="FunctionClass" ObjectID="129" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <Object PropName="MemorySection" ObjectID="130" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+            </Object>
+            <Object PropName="SharedUtilityFunctions" ObjectID="131" ClassName="Simulink.FunctionReferenceClass">
+              <Object PropName="FunctionClass" ObjectID="132" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+              <Object PropName="MemorySection" ObjectID="133" ClassName="Simulink.MapDataRef">
+                <P Name="UUID" Class="char"/>
+              </Object>
+            </Object>
+          </Object>
+          <P Name="isFunctionPlatform" Class="logical">1</P>
+          <P Name="DeploymentType" Class="char">Unset</P>
+          <P Name="Name" Class="char">MultiRateComponent_c</P>
+          <P Name="Active" Class="logical">1</P>
+        </Object>
+      </Array>
+    </ConcurrentExecutionSettings>
+    <System Ref="system_root"/>
+  </Model>
+</ModelInformation>

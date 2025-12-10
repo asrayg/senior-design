@@ -1,0 +1,240 @@
+{
+  "source_file": "simulink_models/MultiRateComponent.slxc",
+  "c_files": [
+    "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c"
+  ],
+  "mappings": [
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/Periodic",
+      "block_name": "Periodic",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/Periodic",
+      "code_references": [
+        {
+          "line": 30,
+          "code": "/* RootInportFunctionCallGenerator generated from: '<Root>/Periodic' incorporates:"
+        },
+        {
+          "line": 42,
+          "code": "/* End of Outputs for RootInportFunctionCallGenerator generated from: '<Root>/Periodic' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/F1",
+      "block_name": "F1",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/F1",
+      "code_references": [
+        {
+          "line": 31,
+          "code": "*  SubSystem: '<Root>/F1'"
+        },
+        {
+          "line": 44,
+          "code": "/* DataTransferBlock generated from: '<Root>/F1' */"
+        },
+        {
+          "line": 57,
+          "code": "*  DataTransferBlock generated from: '<Root>/F1'"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S1>/Sum",
+      "block_name": "Sum",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S1>/Sum",
+      "code_references": [
+        {
+          "line": 33,
+          "code": "/* Sum: '<S1>/Sum' incorporates:"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/In",
+      "block_name": "In",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/In",
+      "code_references": [
+        {
+          "line": 34,
+          "code": "*  Inport: '<Root>/In'"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S1>/Unit Delay",
+      "block_name": "Unit Delay",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S1>/Unit Delay",
+      "code_references": [
+        {
+          "line": 35,
+          "code": "*  UnitDelay: '<S1>/Unit Delay'"
+        },
+        {
+          "line": 39,
+          "code": "/* Update for UnitDelay: '<S1>/Unit Delay' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/Aperiodic",
+      "block_name": "Aperiodic",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/Aperiodic",
+      "code_references": [
+        {
+          "line": 53,
+          "code": "/* RootInportFunctionCallGenerator generated from: '<Root>/Aperiodic' incorporates:"
+        },
+        {
+          "line": 69,
+          "code": "/* End of Outputs for RootInportFunctionCallGenerator generated from: '<Root>/Aperiodic' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/F2",
+      "block_name": "F2",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/F2",
+      "code_references": [
+        {
+          "line": 54,
+          "code": "*  SubSystem: '<Root>/F2'"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/Out",
+      "block_name": "Out",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/Out",
+      "code_references": [
+        {
+          "line": 56,
+          "code": "/* Outport: '<Root>/Out' incorporates:"
+        },
+        {
+          "line": 65,
+          "code": "*  Outport: '<Root>/Out'"
+        },
+        {
+          "line": 71,
+          "code": "/* Outport: '<Root>/Out' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S2>/Sum",
+      "block_name": "Sum",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S2>/Sum",
+      "code_references": [
+        {
+          "line": 58,
+          "code": "*  Sum: '<S2>/Sum'"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S2>/Unit Delay",
+      "block_name": "Unit Delay",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S2>/Unit Delay",
+      "code_references": [
+        {
+          "line": 59,
+          "code": "*  UnitDelay: '<S2>/Unit Delay'"
+        },
+        {
+          "line": 64,
+          "code": "/* Update for UnitDelay: '<S2>/Unit Delay' incorporates:"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/Init",
+      "block_name": "Init",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/Init",
+      "code_references": [
+        {
+          "line": 78,
+          "code": "/* Outputs for Atomic SubSystem: '<Root>/Init' */"
+        },
+        {
+          "line": 84,
+          "code": "/* End of Outputs for SubSystem: '<Root>/Init' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S3>/State Writer",
+      "block_name": "State Writer",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S3>/State Writer",
+      "code_references": [
+        {
+          "line": 79,
+          "code": "/* StateWriter: '<S3>/State Writer' incorporates:"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/InNVM",
+      "block_name": "InNVM",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/InNVM",
+      "code_references": [
+        {
+          "line": 80,
+          "code": "*  Inport: '<Root>/InNVM'"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/Term",
+      "block_name": "Term",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/Term",
+      "code_references": [
+        {
+          "line": 90,
+          "code": "/* Outputs for Atomic SubSystem: '<Root>/Term' */"
+        },
+        {
+          "line": 96,
+          "code": "/* End of Outputs for SubSystem: '<Root>/Term' */"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<Root>/OutNVM",
+      "block_name": "OutNVM",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<Root>/OutNVM",
+      "code_references": [
+        {
+          "line": 91,
+          "code": "/* Terminate for Outport: '<Root>/OutNVM' incorporates:"
+        }
+      ]
+    },
+    {
+      "file_path": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c",
+      "block_path": "<S4>/State Reader",
+      "block_name": "State Reader",
+      "location": "R2025b/glnxa64/coderTop/coderTop_ert_R2025b_glnxa64/MultiRateComponent_ert_rtw/MultiRateComponent.c:<S4>/State Reader",
+      "code_references": [
+        {
+          "line": 92,
+          "code": "*  StateReader: '<S4>/State Reader'"
+        }
+      ]
+    }
+  ]
+}

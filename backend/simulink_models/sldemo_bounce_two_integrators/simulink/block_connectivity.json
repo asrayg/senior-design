@@ -1,0 +1,129 @@
+{
+  "nodes": {
+    "1": {
+      "name": "Coefficient of Restitution",
+      "node_type": "Gain",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "10"
+      ],
+      "outgoing": [
+        "6"
+      ]
+    },
+    "2": {
+      "name": "Compare To Zero",
+      "node_type": "Reference",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "12"
+      ],
+      "outgoing": [
+        "10",
+        "12"
+      ]
+    },
+    "3": {
+      "name": "Gravitational\nAcceleration",
+      "node_type": "Constant",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [],
+      "outgoing": [
+        "10"
+      ]
+    },
+    "4": {
+      "name": "Ground",
+      "node_type": "Ground",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [],
+      "outgoing": [
+        "5"
+      ]
+    },
+    "5": {
+      "name": "Initial Position",
+      "node_type": "InitialCondition",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "4"
+      ],
+      "outgoing": [
+        "12"
+      ]
+    },
+    "6": {
+      "name": "Initial Velocity",
+      "node_type": "InitialCondition",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "1"
+      ],
+      "outgoing": [
+        "10"
+      ]
+    },
+    "7": {
+      "name": "More Info",
+      "node_type": "SubSystem",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [],
+      "outgoing": []
+    },
+    "12": {
+      "name": "Position",
+      "node_type": "Integrator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "10",
+        "2",
+        "5"
+      ],
+      "outgoing": [
+        "9",
+        "2"
+      ]
+    },
+    "9": {
+      "name": "Terminator",
+      "node_type": "Terminator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "12"
+      ],
+      "outgoing": []
+    },
+    "10": {
+      "name": "Velocity",
+      "node_type": "Integrator",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [
+        "6",
+        "3",
+        "2"
+      ],
+      "outgoing": [
+        "12",
+        "1"
+      ]
+    },
+    "11": {
+      "name": "Scope",
+      "node_type": "Scope",
+      "parent_system": "system_root",
+      "model_name": "sldemo_bounce_two_integrators",
+      "incoming": [],
+      "outgoing": []
+    }
+  }
+}

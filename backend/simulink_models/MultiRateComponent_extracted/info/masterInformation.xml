@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/SlCache/19700101">
+  <slcache.MasterInformation type="slcache.MasterInformation" uuid="26b43b9c-c7a5-42ab-b100-4445ad4ecae2">
+    <entries type="slcache.ReleaseMap" uuid="b8d8add7-485a-4ece-8c21-e7e6461e263c">
+      <platforms>glnxa64</platforms>
+      <release>R2025b</release>
+    </entries>
+    <modelName>MultiRateComponent</modelName>
+  </slcache.MasterInformation>
+</MF0>

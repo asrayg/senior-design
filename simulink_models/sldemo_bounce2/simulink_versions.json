@@ -1,0 +1,74 @@
+{
+  "14": {
+    "artifact_id": "14",
+    "version_id": "7b17760832662b9e9edd064f341fff394c8e401d78670917c09c99e353729ba0",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221734",
+    "parent_version_id": null
+  },
+  "17": {
+    "artifact_id": "17",
+    "version_id": "48b548b29c67d6acd3ed3498175043040daed50ea2a7fd58828b826e76366988",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221760",
+    "parent_version_id": null
+  },
+  "16": {
+    "artifact_id": "16",
+    "version_id": "2d8d430495bb8df35d79cb0c265233b135d7fb63dd67377d0b5c59d2f3e85a4d",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221775",
+    "parent_version_id": null
+  },
+  "15": {
+    "artifact_id": "15",
+    "version_id": "451e185cd00ca5430e132a6fd02ca492a3ab768cdd4c0618f34db2cc4976ad0e",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221789",
+    "parent_version_id": null
+  },
+  "19": {
+    "artifact_id": "19",
+    "version_id": "006018198b902263c5f21ab454c0a111527320ccb3915bb654dc86dd9bbca25a",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221801",
+    "parent_version_id": null
+  },
+  "1": {
+    "artifact_id": "1",
+    "version_id": "7dc495422dbdceb0cf25ca18d2a3a7a296b53bf556a02860748abcba8d3beb20",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221815",
+    "parent_version_id": null
+  },
+  "20": {
+    "artifact_id": "20",
+    "version_id": "b45039fbf22e280bd1b85eaf527d14536855a13df9ffd70692d8c19fa58a795e",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221827",
+    "parent_version_id": null
+  },
+  "21": {
+    "artifact_id": "21",
+    "version_id": "4893e165013e3fa3d763d7c1008ae5f1228aa1b3a67e42444dd53646758e9e84",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221839",
+    "parent_version_id": null
+  },
+  "22": {
+    "artifact_id": "22",
+    "version_id": "68431cc38a2019e5a29280d7815769bcc389c218505d0381478cd33604e71487",
+    "artifact_type": "model",
+    "tool": "simulink",
+    "timestamp": "2025-11-18T17:19:35.221850",
+    "parent_version_id": null
+  }
+}

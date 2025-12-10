@@ -1,0 +1,14 @@
+{
+  "nodes": {
+    "R-1": {
+      "name": "Requirement",
+      "node_type": "Requirement_General",
+      "text": "Text",
+      "xmi_id": "_18_0beta_8f90291_1393588306585_689856_10305",
+      "incoming": [],
+      "outgoing": [],
+      "properties": {},
+      "source_file": "Unknown"
+    }
+  }
+}

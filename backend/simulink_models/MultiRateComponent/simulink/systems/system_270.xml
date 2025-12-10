@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[0, 157, 1024, 902]</P>
+  <P Name="ZoomFactor">173</P>
+  <Block BlockType="Inport" Name="In" SID="290">
+    <P Name="Position">[-185, 83, -155, 97]</P>
+    <P Name="ZOrder">176</P>
+  </Block>
+  <Block BlockType="TriggerPort" Name="f2" SID="271">
+    <PortCounts/>
+    <P Name="Position">[-88, 20, -68, 40]</P>
+    <P Name="ZOrder">116</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="TriggerType">function-call</P>
+    <P Name="VariantControl">Variant</P>
+    <P Name="StatesWhenEnabling">held</P>
+    <P Name="PortDimensions">1</P>
+  </Block>
+  <Block BlockType="Sum" Name="Sum" SID="273">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-85, 80, -65, 100]</P>
+    <P Name="ZOrder">110</P>
+    <P Name="NameLocation">top</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="Inputs">|++</P>
+  </Block>
+  <Block BlockType="UnitDelay" Name="Unit Delay" SID="274">
+    <P Name="Position">[-55, 123, -20, 157]</P>
+    <P Name="ZOrder">113</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="HideAutomaticName">off</P>
+    <P Name="SampleTime">-1</P>
+    <P Name="StateName">F2State</P>
+    <P Name="HasFrameUpgradeWarning">on</P>
+  </Block>
+  <Block BlockType="Outport" Name="Out" SID="275">
+    <P Name="Position">[55, 83, 85, 97]</P>
+    <P Name="ZOrder">115</P>
+    <P Name="HideAutomaticName">off</P>
+  </Block>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">290#out:1</P>
+    <P Name="Dst">273#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">2</P>
+    <P Name="Src">274#out:1</P>
+    <P Name="Points">[-15, 0]</P>
+    <P Name="Dst">273#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">3</P>
+    <P Name="Src">273#out:1</P>
+    <P Name="Points">[62, 0]</P>
+    <Branch>
+      <P Name="ZOrder">4</P>
+      <P Name="Dst">275#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">5</P>
+      <P Name="Points">[0, 50]</P>
+      <P Name="Dst">274#in:1</P>
+    </Branch>
+  </Line>
+</System>

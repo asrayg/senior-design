@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Configuration Management for Model-Based Design of Software</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            line-height: 1.65;
+            max-width: 1200px;
+        }
+        h1, h2, h3, h4 { 
+            color: #003366; 
+        }
+        h1 {
+            border-bottom: 3px solid #003366;
+            padding-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            margin-top: 25px;
+        }
+        code { 
+            background-color: #f2f2f2; 
+            padding: 3px 6px; 
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #003366;
+            overflow-x: auto;
+        }
+        .section { 
+            margin-bottom: 40px; 
+        }
+        .team-info {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Configuration Management for Model-Based Design of Software</h1>
+
+<div class="team-info">
+    <p><strong>Team:</strong> Issmale Bekri, Asray Gopa, Arjun Patel, Akhil Pallem</p>
+    <p><strong>Client:</strong> Scott Meyers, Collins Aerospace</p>
+    <p><strong>Course:</strong> COM S 402 - Senior Design Project</p>
+    <p><strong>Instructor:</strong> Simanta Mitra</p>
+    <p><strong>TA:</strong> Scott Song</p>
+    <p><strong>Fall 2025</strong></p>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Chapter 1 - Requirements</h2>
+
+<h3>1.1 Purpose</h3>
+<p>
+Engineers using Cameo, Simulink, Git, and Python-based testing tools currently lack reliable cross-tool traceability across the system development lifecycle. While each tool provides strong domain-specific capabilities, the absence of an integrated traceability mechanism makes it difficult to understand how requirements propagate through models, code, and verification artifacts. This gap is typically addressed through manual processes such as spreadsheets or static trace matrices, which do not scale well and are prone to human error.
+</p>
+<p>
+Certification processes in the aerospace domain require clearly defined baselines, documented version lineage, and robust impact analysis capabilities to demonstrate compliance. When traceability is incomplete or inconsistent, engineering teams face increased certification risk, longer review cycles, and reduced confidence in change decisions.
+</p>
+<p>
+This project provides a unified system for tracking and analyzing lifecycle artifacts across traditionally siloed engineering platforms. By integrating requirements, models, and code into a single traceability framework, the system enables comprehensive impact analysis, improves development visibility, and supports streamlined certification readiness. The system is designed to serve as a trusted source of traceability evidence, reducing manual effort while increasing confidence in system-level changes.
+</p>
+
+<h3>1.2 Scope</h3>
+<p>The system includes the following functional areas:</p>
+
+<h4>Requirements Ingestion</h4>
+<p>
+Import and normalize SysML requirements from Cameo, including hierarchical parent–child relationships, requirement attributes, and existing traceability links. Imported requirements are represented as structured artifacts that can be queried and linked across the lifecycle.
+</p>
+
+<h4>Model Ingestion</h4>
+<p>
+Import Simulink model elements, including blocks, signals, and associated requirements. The system supports automated mapping between Simulink elements and generated C code functions, enabling traceability from requirements through executable implementations.
+</p>
+
+<h4>Code and Test Linkage</h4>
+<p>
+Automatically identify and link C source code functions to Python-based test procedures. This establishes bidirectional traceability between implementation and verification artifacts, enabling users to determine both which tests validate a given function and which functions satisfy a given requirement.
+</p>
+
+<h4>Graph-Based Storage</h4>
+<p>
+Store all artifacts and relationships within a Neo4j graph database using a normalized graph schema. The graph structure enables efficient traversal across artifacts, supports complex traceability queries, and allows relationships to evolve as the system changes.
+</p>
+
+<h4>Impact Analysis</h4>
+<p>
+Perform graph-based impact analysis to identify downstream effects of changes across requirements, models, code, and tests. This allows users to assess the scope of changes before implementation and supports informed decision-making during system evolution.
+</p>
+
+<h4>Baseline and Version Tracking</h4>
+<p>
+Create, store, and retrieve baseline snapshots containing all artifacts and relationships at a specific point in time. Baselines include version lineage information to support audits, certification activities, historical analysis, and regression investigation.
+</p>
+
+<h3>1.3 Definitions and Acronyms</h3>
+<ul>
+    <li><strong>SysML</strong> - Systems Modeling Language: a general-purpose modeling language used for systems engineering and requirements specification.</li>
+    <li><strong>Cameo</strong> - Cameo Systems Modeler, a commercial SysML/UML modeling tool commonly used for requirements and system architecture management.</li>
+    <li><strong>Simulink</strong> - A MATLAB-based graphical programming environment used for modeling, simulating, and analyzing dynamic systems.</li>
+    <li><strong>Neo4j</strong> - A graph database management system used to store and query complex artifact relationships.</li>
+    <li><strong>Graph Schema</strong> - The data model defines node types, relationship types, and properties within the Neo4j database.</li>
+    <li><strong>Artifact</strong> - Any engineering deliverable, including requirements, model elements, source code functions, or test procedures.</li>
+    <li><strong>Baseline</strong> - A snapshot of the system at a specific point in time, capturing all artifacts and relationships for reference, audit, or certification.</li>
+    <li><strong>Impact Analysis</strong> - The process of identifying all downstream artifacts affected by a change through graph traversal.</li>
+    <li><strong>Version Lineage</strong> - A historical record of how artifacts and relationships evolve over time, enabling traceability of system changes.</li>
+</ul>
+
+<h3>1.4 Users</h3>
+<p>The system is intended for the following user groups:</p>
+
+<h4>Aerospace Engineers</h4>
+<p>
+Primary users who develop and maintain requirements, models, and code. These users require intuitive visibility into cross-tool dependencies and the ability to assess the downstream impact of changes before modifying system artifacts. Common questions include determining which requirements are affected by a model change or which code functions implement a specific requirement.
+</p>
+
+<h4>Software Integrators</h4>
+<p>
+Users are responsible for coordinating and integrating components across the development lifecycle. These users require end-to-end visibility into how requirements flow through models, and code in order to evaluate system-level integration risks and understand the implications of interface or implementation changes.
+</p>
+
+<h4>Certification Authorities</h4>
+<p>
+Reviewers are responsible for validating compliance with certification standards. These users require access to complete traceability data, baseline snapshots, and version history to verify that all requirements are fully implemented, verified, and appropriately documented.
+</p>
+
+<h3>1.5 Constraints</h3>
+<p>The system must adhere to the following constraints:</p>
+
+<ul>
+    <li><strong>Tool Compatibility</strong> - The system must integrate with existing Collins tools, including Cameo Systems Modeler, Simulink, and Git/GitLab without requiring modifications to those tools or changes to established engineering workflows.</li>
+    <li><strong>Neo4j Aura Database Requirement</strong> - All graph storage operations and queries must be compatible with Neo4j Aura DB, including its cloud-hosted environment, security model, and supported query capabilities.</li>
+    <li><strong>GitLab Integration</strong> - The system must operate within GitLab's API, authentication, and access control constraints when interacting with source code repositories and version histories.</li>
+    <li><strong>Performance Requirements</strong> - The system must support large-scale aerospace projects containing thousands of requirements, model elements, code functions, and tests, while maintaining acceptable performance for queries, analysis, and visualization.</li>
+    <li><strong>Data Format Compatibility</strong> - The system must support standard export formats from Cameo (XML, JSON) and Simulink (SLX, XML) without requiring proprietary plugins, extensions, or modifications to vendor tools.</li>
+</ul>
+
+<h3>1.6 Assumptions</h3>
+<p>The system design is based on the following assumptions:</p>
+<ul>
+    <li>Source artifacts such as requirements, models, and code are version-controlled and accessible through standard exports or APIs provided by their respective tools.</li>
+    <li>Users are proficient with their native engineering tools, including Cameo, Simulink, Git/GitLab, and Python-based testing frameworks.</li>
+    <li>The system operates as a decision-support and analysis tool, providing traceability, visualization, and impact assessment without serving as an authoring or editing environment for source artifacts.</li>
+    <li>Artifact ownership, access control, and approval processes remain governed by existing organizational policies and tool-specific permissions.</li>
+</ul>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Chapter 2 - Design</h2>
+
+<h3>2.1 System Overview</h3>
+<p>
+Our system integrates four major engineering tools—Cameo (SysML), Simulink, and GitLab—into a unified configuration-management platform. Each tool outputs artifacts that flow through custom loaders into a Neo4j graph, where traceability, version history, and impact analysis are performed. The frontend visualizes these artifacts as an interactive graph.
+</p>
+
+<h4>System Components:</h4>
+<ul>
+    <li><strong>Cameo Loader</strong> - extracts SysML requirements from Collins' Cameo access and exports them as JSON.</li>
+    <li><strong>Simulink Loader</strong> - uses the MATLAB Simulink Artifacts to extract blocks, hierarchy, and connections.</li>
+    <li><strong>GitLab Loader</strong> - retrieves relevant code artifacts and links them to model elements.</li>
+    <li><strong>Backend (Flask)</strong> - orchestrates loading, versioning, and retrieval of artifacts.</li>
+    <li><strong>Neo4j Graph Database</strong> - stores all artifacts, relationships, and version snapshots.</li>
+    <li><strong>Frontend Visualization (Next.js + ReactFlow)</strong> - renders nodes, traceability edges, hierarchy edges, and version-change highlights.</li>
+</ul>
+
+<h3>2.2 Architecture Breakdown</h3>
+
+<h4>2.2.1 Cameo Integration</h4>
+<p><strong>Purpose:</strong> Convert SysML requirements from Cameo into graph artifacts that can be linked to downstream models and code.</p>
+
+<p><strong>Implementation Steps:</strong></p>
+<ol>
+    <li>Used Collins Aerospace Cameo access to download existing requirement models.</li>
+    <li>Exported the Cameo model to a consistent JSON format.</li>
+    <li>Processed the exported JSON using a custom parser that extracts:
+        <ul>
+            <li>requirement ID</li>
+            <li>name &amp; description</li>
+            <li>parent–child structure</li>
+        </ul>
+    </li>
+    <li>Created graph nodes for each requirement in Neo4j.</li>
+    <li>Preserved hierarchical relationships.</li>
+    <li>Ensured requirements have IDs for matching with Simulink, code, and tests.</li>
+</ol>
+
+<h4>2.2.2 Simulink Integration</h4>
+<p>Represent Simulink model elements as graph artifacts and link them to upstream requirements.</p>
+
+<p><strong>Implementation Steps:</strong></p>
+<ol>
+    <li>Used MATLAB Simulink Artifacts to open .slx files from the provided Simulink models.</li>
+    <li>Extracted blocks, block types, paths, subsystem hierarchy, and signal connections.</li>
+    <li>For each block, create a corresponding graph node with metadata (sid, name, block type).</li>
+    <li>Captured internal connections between blocks (in/out ports → edges).</li>
+    <li>Preserved hierarchy so that nested subsystems appear in the graph as parent–child structures.</li>
+    <li>Enabled these blocks to be linked later to code files and test artifacts.</li>
+</ol>
+
+<h4>2.2.3 Git + Version History Integration</h4>
+
+<p><strong>A. GitLab Integration (Code Traceability)</strong></p>
+<ul>
+    <li>Connected Simulink blocks to actual C functions found in the GitLab repository.</li>
+    <li>Engineers can instantly view the relevant implementation code for a model block.</li>
+    <li>Enables traceability chain: Requirement → Model Block → Code File → Test Procedure</li>
+</ul>
+
+<p><strong>B. Graph-Based Version Control (Snapshot System)</strong></p>
+<ul>
+    <li>A snapshot is created when a block or requirement changes.</li>
+    <li>The snapshot stores:
+        <ul>
+            <li>incoming/outgoing connections</li>
+            <li>parent/child links</li>
+            <li>satisfies/derives-from relationships</li>
+        </ul>
+    </li>
+    <li>During comparison, differences are visualized:
+        <ul>
+            <li>Green nodes &amp; green broken edges = new connection added</li>
+            <li>Red nodes/edges = root node dependency changed</li>
+        </ul>
+    </li>
+</ul>
+
+<h4>2.2.4 Neo4j Schema</h4>
+<p><strong>Node Types:</strong></p>
+<ul>
+    <li>Requirement</li>
+    <li>Block (Simulink)</li>
+    <li>File (C)</li>
+    <li>Test Case</li>
+    <li>Version Snapshot</li>
+</ul>
+
+<p><strong>Relationship Types:</strong></p>
+<ul>
+    <li>requirement → requirement (hierarchy)</li>
+    <li>block → block (signal flow)</li>
+    <li>requirement → block (traceability link)</li>
+    <li>block → code file (implementation)</li>
+    <li>version snapshot → artifact (snapshot state)</li>
+</ul>
+
+<p>These relationships power all analysis and visualization.</p>
+
+<h4>2.2.5 Impact Analysis Engine</h4>
+<p>Impact analysis answers: "If this requirement changes, what downstream artifacts are affected?"</p>
+
+<p><strong>Implementation:</strong></p>
+<ul>
+    <li>Uses BFS/DFS traversal starting from a selected node.</li>
+    <li>Tags all reachable descendants as "impacted".</li>
+    <li>Highlighted visually in green in the UI.</li>
+    <li>Implemented in the frontend using descendant lookup and edge traversal inside ArtifactTree.tsx.</li>
+</ul>
+
+<h4>2.2.6 Baseline + Versioning</h4>
+<p><strong>Purpose:</strong> Capture the state of the system at any point in time.</p>
+
+<p><strong>Functionality:</strong></p>
+<ul>
+    <li>Creating a baseline stores the entire tree of artifacts under that root.</li>
+    <li>Each version snapshot stores the relationships present at that time.</li>
+    <li>The comparison panel highlights differences.</li>
+    <li>Used during requirement changes or model updates.</li>
+</ul>
+
+<h3>2.3 API Documentation</h3>
+
+<h4>GET /api/requirements</h4>
+<p><strong>Purpose:</strong> Retrieve all requirements stored in the system, with optional filtering.</p>
+<p><strong>Input:</strong></p>
+<ul>
+    <li><code>type</code> - filter by requirement type</li>
+    <li><code>search</code> - perform substring search</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre>[
+  {
+    "id": "REQ-001",
+    "name": "System shall ...",
+    "description": "...",
+    "type": "HighLevel"
+  }
+]</pre>
+
+<h4>GET /api/requirements/{req_id}</h4>
+<p><strong>Purpose:</strong> Retrieve a single requirement and its full child hierarchy.</p>
+<p><strong>Example Request:</strong> <code>GET /api/requirements/REQ-001</code></p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "id": "REQ-001",
+  "name": "...",
+  "children": [
+    {
+      "id": "REQ-001.1",
+      "children": []
+    }
+  ]
+}</pre>
+
+<h4>GET /api/requirements/hierarchy</h4>
+<p><strong>Purpose:</strong> Return the complete requirement tree (all root requirements and their descendants).</p>
+<p><strong>Output:</strong></p>
+<pre>[
+  {
+    "id": "REQ-1",
+    "name": "Top-level Requirement",
+    "children": [...]
+  }
+]</pre>
+
+<h4>GET /api/requirements/stats</h4>
+<p><strong>Purpose:</strong> Return basic statistics about the requirement dataset.</p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "total": 120,
+  "types": 4,
+  "with_children": 89,
+  "with_traces": 42
+}</pre>
+
+<h4>GET /api/code-file?file_path=...</h4>
+<p><strong>Purpose:</strong> Retrieve C code extracted from Simulink auto-generated code.</p>
+<p><strong>Input (Query Parameters):</strong></p>
+<ul>
+    <li><code>file_path</code> - path to the extracted file</li>
+    <li><code>raw=true</code> - optional, return plain text only</li>
+</ul>
+<p><strong>Output:</strong></p>
+<pre>{
+  "model_name": "ControllerModel",
+  "file_path": "R2025b/.../Controller.c",
+  "content": "int step() { ... }",
+  "line_count": 350
+}</pre>
+
+<h4>POST /api/code-references/update</h4>
+<p><strong>Purpose:</strong> Update or attach code-reference metadata to a Simulink block.</p>
+<p>Used when connecting blocks to specific lines of code.</p>
+<p><strong>Input:</strong></p>
+<pre>{
+  "block_sid": "34",
+  "block_path": "&lt;Root&gt;/Gain",
+  "file_path": "Controller.c",
+  "ref_index": 0,
+  "line": 124,
+  "code": "y = x * 5;"
+}</pre>
+<p><strong>Output:</strong></p>
+<pre>{
+  "success": true
+}</pre>
+
+<h4>GET /api/artifacts/&lt;artifact_id&gt;/versions</h4>
+<p><strong>Purpose:</strong> Return all version snapshots associated with a specific artifact.</p>
+<p><strong>Example Request:</strong> <code>GET /api/artifacts/block_123/versions</code></p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "artifact_id": "block_123",
+  "versions": [
+    {
+      "version_id": "v1",
+      "timestamp": "2025-01-10T15:30:00Z"
+    },
+    {
+      "version_id": "v2",
+      "timestamp": "2025-01-17T09:12:44Z"
+    }
+  ]
+}</pre>
+
+<h4>GET /api/blocks/with-versions</h4>
+<p><strong>Purpose:</strong> Return all Simulink blocks along with their latest version metadata.</p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "blocks": [
+    {
+      "id": "block_12",
+      "name": "Gain",
+      "latest_version": "v4"
+    }
+  ]
+}</pre>
+
+<h4>GET /api/requirements/with-versions</h4>
+<p><strong>Purpose:</strong> Return all requirements with their latest version information.</p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "name": "System shall...",
+      "latest_version": "v3"
+    }
+  ]
+}</pre>
+
+<h4>GET /api/versions/lineage/&lt;artifact_id&gt;</h4>
+<p><strong>Purpose:</strong> Retrieve the full version lineage (ancestor chain) of a given artifact.</p>
+<p><strong>Example Request:</strong> <code>GET /api/versions/lineage/REQ-12</code></p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "artifact_id": "REQ-12",
+  "lineage": [
+    { "version_id": "v1", "parent": null },
+    { "version_id": "v2", "parent": "v1" },
+    { "version_id": "v3", "parent": "v2" }
+  ]
+}</pre>
+
+<h4>POST /api/artifacts/&lt;artifact_id&gt;/snapshot</h4>
+<p><strong>Purpose:</strong> Create a new version snapshot for a specific artifact.</p>
+<p><strong>Example Request:</strong> <code>POST /api/artifacts/block_45/snapshot</code></p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "status": "snapshot_created",
+  "artifact_id": "block_45",
+  "version_id": "v7",
+  "timestamp": "2025-02-01T10:22:19Z"
+}</pre>
+
+<h4>POST /api/versions/load</h4>
+<p><strong>Purpose:</strong> Load all version metadata from storage into the graph.</p>
+<p><strong>Input:</strong></p>
+<pre>{
+  "source": "version_storage"
+}</pre>
+<p><strong>Output:</strong></p>
+<pre>{
+  "status": "versions_loaded",
+  "count": 128
+}</pre>
+
+<h4>GET /api/versions/stats</h4>
+<p><strong>Purpose:</strong> Return system-wide statistics about versions.</p>
+<p><strong>Output:</strong></p>
+<pre>{
+  "total_versions": 128,
+  "versions_by_type": {
+    "Block": 82,
+    "Requirement": 41,
+    "File": 5
+  }
+}</pre>
+
+<h3>2.4 UI Design</h3>
+<p><strong>Main Components:</strong></p>
+<ul>
+    <li><strong>ArtifactTree:</strong>
+        <ul>
+            <li>Renders nodes and edges</li>
+            <li>Handles expand/collapse of Simulink parent</li>
+            <li>Highlights impacted nodes</li>
+            <li>Manages version visualization states</li>
+        </ul>
+    </li>
+    <li><strong>Node Details Panel:</strong> Displays metadata and code snippets.</li>
+    <li><strong>Version Comparison Panel:</strong> Shows added/removed/modified edges and nodes.</li>
+    <li><strong>Traceability Edges:</strong> Requirements ↔ Blocks ↔ Code</li>
+</ul>
+
+<p><strong>Visualization Features</strong></p>
+<ul>
+    <li>Automatic graph layout using Dagre</li>
+    <li>Color-coded node types</li>
+    <li>Version colors</li>
+    <li>Interactive zoom and drag</li>
+    <li>Smoothstep edges with arrows</li>
+    <li>Mini-map and controls</li>
+</ul>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Chapter 3 - Work Done (Per Team Member)</h2>
+
+<h3>Issmale Bekri</h3>
+<p><strong>Work Completed:</strong></p>
+<ul>
+    <li>Impact analysis logic for frontend page</li>
+    <li>Parsed Cameo data and loaded into JSON files</li>
+    <li>Added version history tracking from endpoint for saved changes</li>
+    <li>Built impact analysis queries and highlighted nodes changed</li>
+    <li>Created ReactFlow visualization components</li>
+    <li>Endpoint for cross tool connections between Cameo and Simulink</li>
+</ul>
+
+<h3>Akhil Pallem</h3>
+<p><strong>Work Completed:</strong></p>
+<ul>
+    <li>Layout of the front end page and styling</li>
+    <li>Created ReactFlow visualization components for tree based structure and connections</li>
+    <li>Figma Board sketches for front end design</li>
+    <li>Version control end point to keep track of saved changes for all changes</li>
+    <li>Loaded Cameo data into Neo4j database with existing relationships and data connections</li>
+    <li>Created Cameo endpoints to attach to frontend nodes</li>
+</ul>
+
+<h3>Asray Gopa</h3>
+<p><strong>Work Completed:</strong></p>
+<ul>
+    <li>Formalized project architecture</li>
+    <li>Set up Simulink nodes and hierarchy with existing relationships</li>
+    <li>Set up Neo4j Database / Initialize Python Flask Server</li>
+    <li>Condensed impact analysis and making the links UI adjustments</li>
+    <li>Implemented tree caching to reduce load time</li>
+    <li>Fetching GitLab code changes for version control</li>
+    <li>Cross-platform child node connections between Simulink and Cameo</li>
+</ul>
+
+<h3>Arjun Patel</h3>
+<p><strong>Work Completed:</strong></p>
+<ul>
+    <li>Parsed Simulink data</li>
+    <li>Setup connections and endpoints in Neo4j database for Simulink parsed files (.SLX)</li>
+    <li>Endpoints to pull Simulink information</li>
+    <li>Added manual linking for Cameo and Simulink data</li>
+    <li>Recreated impact analysis page on main page and condensed into one</li>
+    <li>Connected Simulink generated code to the nodes that produced it</li>
+</ul>
+
+<h3>Technologies we each learned:</h3>
+<ul>
+    <li>Neo4j</li>
+    <li>Cameo</li>
+    <li>Simulink</li>
+    <li>Python Flask</li>
+    <li>GitLab API</li>
+    <li>Next.js</li>
+    <li>Reactflow</li>
+</ul>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Chapter 4 - Results Achieved</h2>
+
+<h3>4.1 Major Deliverables</h3>
+<ul>
+    <li>Built custom loaders that export/parse Cameo SysML requirements and extract Simulink blocks, hierarchy, connections and generated code</li>
+    <li>Implemented impact analysis using graph traversal from a selected node to tag downstream descendants as impacted, and visualized impacts directly in the UI.</li>
+    <li>Implemented a Neo4j-backed trace model with defined node/relationship types, plus a snapshot-based versioning system that supports lineage tracking and diff visualization across versions.</li>
+    <li>Delivered a ReactFlow based interactive graph UI with details panels, version comparison, Dagre auto-layout, minimap/controls, and traceability edges connecting requirements, blocks, and code.</li>
+</ul>
+
+<h3>4.2 Client Value Delivered</h3>
+<ul>
+    <li>The system captures baselines/snapshots and preserves relationships at a point in time, enabling auditors/engineers to show what changed and when.</li>
+    <li>Delivered an end-to-end chain from Requirement to Model Block to Code File Procedure, making relationships explicit rather than manual/tribal knowledge.</li>
+    <li>Engineers can select a requirement or model element and automatically identify impacted downstream artifacts via traversal, with direct UI highlighting to speed decision-making.</li>
+</ul>
+
+<h3>4.3 Limitations</h3>
+<ul>
+    <li>Parsing and graph-writing time increases with model size and connectivity, especially for deep hierarchies and dense signal networks.</li>
+    <li>Some Simulink code generation styles may not fully parse correctly.</li>
+</ul>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Appendix - Demo Slides</h2>
+<p>Demo slides available in project repository.</p>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Repository Link</h2>
+<p><a href="https://git.las.iastate.edu/SeniorDesignComS/2025fall/402c/sd02_configuration_management">
+https://git.las.iastate.edu/SeniorDesignComS/2025fall/402c/sd02_configuration_management
+</a></p>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Setup Instructions</h2>
+
+<h3>A. Backend</h3>
+<pre>
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py
+</pre>
+<p>
+Neo4j AuraDB credentials are already configured inside <code>config.py</code>. 
+No additional database setup is required unless credentials change.
+</p>
+
+<h3>B. Frontend</h3>
+<pre>
+cd frontend
+npm install
+npm run dev
+</pre>
+<p>
+The application will be available at <code>http://localhost:3000</code>.
+</p>
+</div>
+
+<hr>
+
+<div class="section">
+<h2>Contact</h2>
+<p><strong>Client:</strong> Scott Meyers, Collins Aerospace<br>
+Email: <a href="mailto:scott.meyers@collins.com">scott.meyers@collins.com</a></p>
+
+<p><strong>Team:</strong> Iowa State University – COM S 402 – Senior Design</p>
+</div>
+
+</body>
+</html>
